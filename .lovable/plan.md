@@ -41,7 +41,9 @@ You've given me the festival schedule, the full lineup, the kick-off ticket page
 - **Get Involved** — Volunteer and Donate as two equal-weight sections. Volunteer covers street team and flyering, setup and breakdown, day-of support, and year-round tabling, with a button to the Google Form (new tab). Donate explains the fiscal sponsorship, links to the GLCF donation page, and notes contributions are tax-deductible through the Greater Lowell Community Foundation.
 - **About** — organization story and mission.
 
-Footer on every page, verbatim: "The Lowell Hip-Hop Festival operates under the fiscal sponsorship of the Greater Lowell Community Foundation, a 501(c)(3) public charity."
+Footer on every page, verbatim: "The Lowell Hip-Hop Festival operates under the fiscal sponsorship of the Greater Lowell Community Foundation, a 501(c)(3) public charity." Above that, Off White Instagram and Facebook icon links that turn Electric Gold on hover, opening in a new tab, with proper aria-labels.
+
+Social. Store a `socialLinks` object in `src/content.ts`: Instagram (`https://www.instagram.com/lowellhiphopfestival/`, handle `@lowellhiphopfestival`) and Facebook (`https://www.facebook.com/LowellHipHopFestival/`, handle `@LowellHipHopFestival`). Render them in the footer as icon links and on the Home page in a Beat Blue "Follow the festival" band with tappable Oswald handle links. No social icons in header or nav.
 
 ## Technical notes
 
