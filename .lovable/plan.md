@@ -5,9 +5,21 @@ A nine-page, poster-style site. No backend, no database, no logins. Every ticket
 ## Waiting on you
 
 - The three logo files (horizontal wordmark, circular badge, app icon) — re-upload and I'll wire them in.
-- The real festival schedule, artist list, and ticket links — paste them and I'll load them into the content file.
+- Dance Jam Finale venue, and ticket links for any event other than the Oct 10 kick-off.
+- Community (year-round) events, if you have any to list now.
 
-Until those arrive I'll build the structure with clearly marked stand-in entries (except the two named acts), and swap in the real material as soon as you send it. Donation button uses the GLCF link you gave.
+You've given me the festival schedule, the full lineup, the kick-off ticket page, and the GLCF donation link — all of that goes in as real content. Artists show as styled placeholder blocks with initials until you send photos.
+
+### Festival schedule going in
+
+- Sat Oct 10, 6pm — Concert Kick-off with the Jungle Brothers & Termanology, Taffeta Music Hall (tickets: taffetamusic.com)
+- Tue Oct 13, 4–6pm — Learn to Dance workshop, GEN Studio (Western Ave)
+- Wed Oct 14, 7pm — Hip-Hop Trivia, Warp & Weft
+- Thu Oct 15, 8pm — DJ Myth, Warp & Weft
+- Sat Oct 17, 12pm — Hip-Hop 101 and Graffiti Lettering Workshop, The Hive Market
+- Sat Oct 17, 8pm — Fee & the Evolutionists, Warp & Weft
+- Sun Oct 18, 1pm — Dance Jam Finale: breaking and hip-hop dance battles, showcases, cyphers and circles
+
 
 ## Look and feel
 
