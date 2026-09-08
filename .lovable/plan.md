@@ -24,7 +24,7 @@ All three logos are in hand: the horizontal wordmark for the header and hero, th
 - Sat Sep 19, 12–12:30pm — Lowell Kinetic Sculpture Race at Sampas Pavilion on Pawtucket Blvd.
 - Sat Oct 3, 12–5pm — Open Streets Lowell on Merrimack St. in Downtown Lowell
 
-Naming rules: the event is "Kick-off Concert" everywhere (never "Concert Kick-off"); the venue is "The Hive Market" everywhere (never "The Hive"); the act is "Jungle Brothers" in headlines and "the Jungle Brothers" in running text.
+Naming rules: the event is "Kick-off Concert" everywhere (never "Concert Kick-off"); the venue is "The Hive Market" everywhere (never "The Hive"); the act is "Jungle Brothers" with no article in every instance.
 
 
 
@@ -38,8 +38,8 @@ Naming rules: the event is "Kick-off Concert" everywhere (never "Concert Kick-of
 
 ## Pages
 
-- **Home** — full-bleed hero with the wordmark, Oct 10–18 2026 dates, and a Get Tickets button; highlights strip for the Kick-off Concert ("Legends & Luminaries with The Jungle Brothers and Termanology") and the Dance Jam Finale ("Breaking, Battles & Boogie"); mission blurb; a Beat Blue "Follow the festival" band with Instagram and Facebook handles as tappable links; an "Upcoming Events" strip; and a sponsor row.
-- **Lineup** — Headliners: the Jungle Brothers (90s legends) and Termanology (local 978 legend). Support: Mill City Madness (Stardust World, Rottenegg, Hazel Adeline), Poppy Pyonn, Malissa Lach, CabbHoppa1, Chi Tashi, SoloArtist, Persona the Tyrant, Ape the Grim. A third block covers the Dance Jam Finale roster — hosted by Elmstreet, breaking judges Baldi, RTA and Kellz with DJ KingX, hip-hop battle judges Keda, McKersin and DOA with DJ Trends, plus Mill Advised and more TBA. Each card: name, styled placeholder block with initials, short bio.
+- **Home** — full-bleed hero with the wordmark, Oct 10–18 2026 dates, and a Get Tickets button; highlights strip for the Kick-off Concert ("Legends & Luminaries with Jungle Brothers and Termanology") and the Dance Jam Finale ("Breaking, Battles & Boogie"); mission blurb; a Beat Blue "Follow the festival" band with Instagram and Facebook handles as tappable links; an "Upcoming Events" strip; and a sponsor row.
+- **Lineup** — Headliners: Jungle Brothers (90s legends) and Termanology (local 978 legend). Support: Mill City Madness (Stardust World, Rottenegg, Hazel Adeline), Poppy Pyonn, Malissa Lach, CabbHoppa1, Chi Tashi, SoloArtist, Persona the Tyrant, Ape the Grim. A third block covers the Dance Jam Finale roster — hosted by Elmstreet, breaking judges Baldi, RTA and Kellz with DJ KingX, hip-hop battle judges Keda, McKersin and DOA with DJ Trends, plus Mill Advised and more TBA. Each card: name, styled placeholder block with initials, short bio.
 - **Festival Schedule** — chronological festival events, Oct 10–18, with date, time, title, venue, ticket link.
 - **Calendar** — static month grid, Sunday–Saturday, prev/next across 2026 and 2027, built from plain date math. Festival days marked gold, community days blue, empty days dimmed; marked days show the title and link to the matching schedule entry. On phones it collapses to a vertical agenda grouped by month.
 - **Events** — year-round community events, upcoming first, with a past-events toggle.
