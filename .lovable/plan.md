@@ -4,7 +4,7 @@ A nine-page, poster-style site. No backend, no database, no logins. Every ticket
 
 ## Waiting on you
 
-- Dance Jam Finale venue, and ticket links for any event other than the Oct 10 kick-off.
+- Ticket links for any event other than the Oct 10 kick-off.
 - Community (year-round) events, if you have any to list now.
 
 All three logos are in hand: the horizontal wordmark for the header and hero, the circular badge for section headers (never under 200px), and the gold app icon used as-is for the favicon and apple-touch-icon. You've also given me the festival schedule, the full lineup, the kick-off ticket page, and the GLCF donation link. Artists show as styled placeholder blocks with initials until you send photos.
@@ -18,7 +18,7 @@ All three logos are in hand: the horizontal wordmark for the header and hero, th
 - Thu Oct 15, 8pm — DJ Myth, Warp & Weft
 - Sat Oct 17, 12pm — Hip-Hop 101 and Graffiti Lettering Workshop, The Hive Market
 - Sat Oct 17, 8pm — Fee & the Evolutionists, Warp & Weft
-- Sun Oct 18, 1pm — Dance Jam Finale: breaking and hip-hop dance battles, showcases, cyphers and circles
+- Sun Oct 18, 1pm — Dance Jam Finale at Tescobar Performance Center: breaking and hip-hop dance battles, showcases, cyphers and circles
 
 
 ## Look and feel
