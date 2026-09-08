@@ -11,5 +11,19 @@ export default defineConfig({
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
+    // Static site: every page is prerendered to HTML at build time.
+    // Upload dist/client/ to Cloudflare Pages; dist/server/ is unused.
+    pages: [
+      { path: "/" },
+      { path: "/lineup" },
+      { path: "/schedule" },
+      { path: "/calendar" },
+      { path: "/events" },
+      { path: "/venues" },
+      { path: "/sponsors" },
+      { path: "/get-involved" },
+      { path: "/about" },
+    ],
+    prerender: { enabled: true, autoStaticPathsDiscovery: false },
   },
 });
