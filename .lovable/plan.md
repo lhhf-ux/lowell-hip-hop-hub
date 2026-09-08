@@ -4,11 +4,11 @@ A nine-page, poster-style site. No backend, no database, no logins. Every ticket
 
 ## Waiting on you
 
-- The three logo files (horizontal wordmark, circular badge, app icon) — re-upload and I'll wire them in.
 - Dance Jam Finale venue, and ticket links for any event other than the Oct 10 kick-off.
 - Community (year-round) events, if you have any to list now.
 
-You've given me the festival schedule, the full lineup, the kick-off ticket page, and the GLCF donation link — all of that goes in as real content. Artists show as styled placeholder blocks with initials until you send photos.
+All three logos are in hand: the horizontal wordmark for the header and hero, the circular badge for section headers (never under 200px), and the gold app icon used as-is for the favicon and apple-touch-icon. You've also given me the festival schedule, the full lineup, the kick-off ticket page, and the GLCF donation link. Artists show as styled placeholder blocks with initials until you send photos.
+
 
 ### Festival schedule going in
 
