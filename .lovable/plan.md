@@ -43,7 +43,7 @@ Naming rules: the event is "Kick-off Concert" everywhere (never "Concert Kick-of
 - **Festival Schedule** — chronological festival events, Oct 10–18, with date, time, title, venue, ticket link.
 - **Calendar** — static month grid, Sunday–Saturday, prev/next across 2026 and 2027, built from plain date math. Festival days marked gold, community days blue, empty days dimmed; marked days show the title and link to the matching schedule entry. On phones it collapses to a vertical agenda grouped by month.
 - **Events** — year-round community events, upcoming first, with a past-events toggle.
-- **Venues** — Taffeta Music Hall, Warp & Weft, The Hive, Tescobar, GEN Studio at Western Ave Studios; address plus short description.
+- **Venues** — Taffeta Music Hall, Warp & Weft, The Hive Market, Tescobar Performance Center, GEN Studio at Western Ave Studios; address plus short description.
 - **Sponsors** — the five tiers (Title $10K+, Premier $5K+, Gold $2.5K, Silver $1K, Community $500), what each includes, contact button.
 - **Get Involved** — Volunteer and Donate as two equal-weight sections. Volunteer covers street team and flyering, setup and breakdown, day-of support, and year-round tabling, with a button to the Google Form (new tab). Donate explains the fiscal sponsorship, links to the GLCF donation page, and notes contributions are tax-deductible through the Greater Lowell Community Foundation.
 - **About** — organization story and mission.
