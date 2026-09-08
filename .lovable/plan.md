@@ -4,14 +4,15 @@ A nine-page, poster-style site. No backend, no database, no logins. Every ticket
 
 ## Waiting on you
 
-- Ticket links for any event other than the Oct 10 kick-off.
-- Community (year-round) events, if you have any to list now.
+- Ticket links for any event other than the Oct 10 kick-off (none — only Oct 10 is ticketed).
 
 All three logos are in hand: the horizontal wordmark for the header and hero, the circular badge for section headers (never under 200px), and the gold app icon used as-is for the favicon and apple-touch-icon. You've also given me the festival schedule, the full lineup, the kick-off ticket page, and the GLCF donation link. Artists show as styled placeholder blocks with initials until you send photos.
 
 
 ### Festival schedule going in
 
+- Sat Oct 3, 12–12:30pm — Lowell Kinetic Sculpture Race at Sampas Pavilion on Pawtucket Blvd.
+- Sat Oct 3, 12–5pm — Open Streets Lowell on Merrimack St. in Downtown Lowell
 - Sat Oct 10, 6pm — Concert Kick-off with the Jungle Brothers & Termanology, Taffeta Music Hall (tickets: taffetamusic.com)
 - Tue Oct 13, 4–6pm — Learn to Dance workshop, GEN Studio (Western Ave)
 - Wed Oct 14, 7pm — Hip-Hop Trivia, Warp & Weft
@@ -19,6 +20,7 @@ All three logos are in hand: the horizontal wordmark for the header and hero, th
 - Sat Oct 17, 12pm — Hip-Hop 101 and Graffiti Lettering Workshop, The Hive Market
 - Sat Oct 17, 8pm — Fee & the Evolutionists, Warp & Weft
 - Sun Oct 18, 1pm — Dance Jam Finale at Tescobar Performance Center: breaking and hip-hop dance battles, showcases, cyphers and circles
+
 
 
 ## Look and feel
