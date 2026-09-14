@@ -20,12 +20,7 @@ export const Route = createFileRoute("/about")({
   component: AboutPage,
 });
 
-const elements = [
-  { name: "The DJ", detail: "Turntables, breaks, and the crate work the whole culture stands on." },
-  { name: "The MC", detail: "The pen and the voice — Lowell has plenty of both." },
-  { name: "The B-Boy / B-Girl", detail: "Footwork, power, and the circle that never closes." },
-  { name: "The Writer", detail: "Letterforms and color, taught hands-on at our workshops." },
-];
+const elements = missionElements;
 
 function AboutPage() {
   return (
