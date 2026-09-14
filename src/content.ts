@@ -268,12 +268,8 @@ export type Sponsor = {
   name: string;
   tier: "gold" | "silver";
   url: string;
-  logoAsset: { url: string };
+  logoUrl: string;
 };
-
-import glcfLogoAsset from "./assets/glcf-logo.jpg.asset.json";
-import lowellBicentennialLogoAsset from "./assets/lowell-bicentennial-logo.png.asset.json";
-import lavoieIndustriesLogoAsset from "./assets/lavoie-industries.jpg.asset.json";
 
 export const currentSponsors: Sponsor[] = [
   {
@@ -281,21 +277,21 @@ export const currentSponsors: Sponsor[] = [
     name: "Lowell Bicentennial",
     tier: "gold",
     url: "https://www.lowell200.com/",
-    logoAsset: lowellBicentennialLogoAsset,
+    logoUrl: "/images/lowell-bicentennial-logo.png",
   },
   {
     id: "greater-lowell-community-foundation",
     name: "Greater Lowell Community Foundation",
     tier: "gold",
     url: "https://www.greaterlowellcf.org/",
-    logoAsset: glcfLogoAsset,
+    logoUrl: "/images/glcf-logo.jpg",
   },
   {
     id: "lavoie-industries",
     name: "LaVoie Industries",
     tier: "silver",
     url: "https://lavoieindustries.com/",
-    logoAsset: lavoieIndustriesLogoAsset,
+    logoUrl: "/images/lavoie-industries.jpg",
   },
 ];
 

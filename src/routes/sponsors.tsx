@@ -50,7 +50,7 @@ function SponsorsPage() {
                     aria-label={`${sponsor.name} (opens in new tab)`}
                   >
                     <img
-                      src={sponsor.logoAsset.url}
+                      src={sponsor.logoUrl}
                       alt={sponsor.name}
                       className="max-h-32 w-full object-contain"
                     />
@@ -74,7 +74,7 @@ function SponsorsPage() {
                     aria-label={`${sponsor.name} (opens in new tab)`}
                   >
                     <img
-                      src={sponsor.logoAsset.url}
+                      src={sponsor.logoUrl}
                       alt={sponsor.name}
                       className="max-h-28 w-full object-contain"
                     />
