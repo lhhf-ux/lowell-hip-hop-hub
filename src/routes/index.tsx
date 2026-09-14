@@ -42,7 +42,7 @@ function HomePage() {
           <div>
             <p className="eyebrow text-gold">Lowell, Massachusetts · Nonprofit</p>
             <h1 className="mt-4 text-5xl leading-[0.95] text-offwhite sm:text-7xl">
-              Lowell Hip-Hop <span className="text-gold">Festival</span>
+              Lowell Hip-Hop Festival
             </h1>
             <p className="label-type mt-5 inline-block bg-graffiti px-4 py-2 text-lg text-offwhite">
               {festivalDates.label}
@@ -69,15 +69,17 @@ function HomePage() {
       </section>
 
       <section className="border-b-2 border-border bg-cardgray">
-        <div className="mx-auto max-w-4xl px-4 py-14 text-center sm:py-20">
+        <div className="mx-auto max-w-4xl px-4 py-14 sm:py-20">
           <p className="eyebrow text-gold">About</p>
-          <p className="mt-5 text-xl leading-relaxed text-offwhite sm:text-2xl">{missionIntro}</p>
-          <p className="mt-6 text-lg leading-relaxed text-concrete">{missionRooted}</p>
-          <ul className="mx-auto mt-6 max-w-xl list-disc space-y-2 pl-5 text-left text-lg text-concrete">
-            {missionElements.map((element) => (
-              <li key={element}>{element}</li>
-            ))}
-          </ul>
+          <div className="mt-5 space-y-5 text-lg leading-relaxed text-concrete">
+            <p>{missionIntro}</p>
+            <p>{missionRooted}</p>
+            <ul className="list-disc space-y-2 pl-5">
+              {missionElements.map((element) => (
+                <li key={element}>{element}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
