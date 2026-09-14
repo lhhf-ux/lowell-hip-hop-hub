@@ -135,7 +135,7 @@ export const events: FestEvent[] = [
     venue: "Tescobar Performance Center",
     mapQuery: "Tescobar Performance Center, Lowell, MA",
     description:
-      "Breaking and hip-hop dance battles, dance showcases, cyphers and circles to close the festival out.",
+      "Hip-hop dance battles, dance showcases, cyphers and circles to close the festival out.",
     category: "festival",
   },
   {
