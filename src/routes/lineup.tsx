@@ -3,7 +3,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ExternalButton } from "@/components/site/Button";
 import { PageHeader, SiteLayout } from "@/components/site/Layout";
 import { danceJamRoster, headliners, supportArtists, ticketUrl } from "@/content";
-import { initialsFor } from "@/lib/events";
 
 const title = "Lineup — Lowell Hip-Hop Festival 2026";
 const description =
@@ -23,15 +22,10 @@ export const Route = createFileRoute("/lineup")({
 
 function ArtistTile({ name, role, bio }: { name: string; role: string; bio: string }) {
   return (
-    <article className="bg-cardgray">
-      <div className="flex aspect-[4/3] items-center justify-center border-b-4 border-gold bg-beat">
-        <span className="font-display text-6xl text-offwhite">{initialsFor(name)}</span>
-      </div>
-      <div className="p-5">
-        <p className="eyebrow text-gold">{role}</p>
-        <h3 className="mt-2 text-2xl text-offwhite">{name}</h3>
-        <p className="mt-2 text-sm text-concrete">{bio}</p>
-      </div>
+    <article className="border-2 border-border bg-cardgray p-5 sm:p-7">
+      <p className="eyebrow text-gold">{role}</p>
+      <h3 className="mt-3 text-2xl text-offwhite sm:text-3xl">{name}</h3>
+      <p className="mt-3 text-base leading-relaxed text-concrete">{bio}</p>
     </article>
   );
 }
