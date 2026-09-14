@@ -7,7 +7,7 @@ import { formatShortDate, googleMapsUrl } from "@/lib/events";
 
 const title = "Venues — Lowell Hip-Hop Festival";
 const description =
-  "Where the Lowell Hip-Hop Festival happens: Taffeta Music Hall, Warp & Weft, The Hive Market, Tescobar Performance Center, and GEN Studio on Western Ave.";
+  "Where the Lowell Hip-Hop Festival happens: Taffeta Music Hall, Warp & Weft, The Hive Public Market, Tescobar Performance Center, and GEN Studio at Western Avenue Studios.";
 
 export const Route = createFileRoute("/venues")({
   head: () => ({
