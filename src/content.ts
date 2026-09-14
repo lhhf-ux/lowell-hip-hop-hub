@@ -175,8 +175,8 @@ export const supportArtists: Artist[] = [
   {
     id: "mill-city-madness",
     name: "Mill City Madness",
-    role: "Stardust World, Rottenegg & Hazel Adeline",
-    bio: "A Lowell scream rap and scenecore group whose queer-friendly, defiant live show and monthly themed events have made them a fixture of the Greater Lowell and Boston rap and rave scenes, and proof the culture is still growing new branches in this city.",
+    role: "Collective",
+    bio: "A Lowell scream-rap and scenecore collective built around the voices of Stardust World, Rottenegg, and Hazel Adeline. Their queer-friendly, defiant live shows and monthly themed events have made them a fixture of the Greater Lowell and Boston rap and rave scenes — proof the culture is still growing new branches in this city.",
   },
   {
     id: "poppy-pyonn",
@@ -220,6 +220,9 @@ export const supportArtists: Artist[] = [
     role: "MC",
     bio: "A New Hampshire b-boy, graffiti writer, battler and MC with records featuring Kool Keith, Mr. Lif, Reks, Termanology, and many more. He is a one-man argument for the four-element framing this festival is built on.",
   },
+];
+
+export const oct17Artists: Artist[] = [
   {
     id: "fee-evolutionists",
     name: "Fee & The Evolutionists",
@@ -228,13 +231,13 @@ export const supportArtists: Artist[] = [
   },
 ];
 
-export const danceJamRoster = [
-  { role: "Host", names: ["Elmstreet"] },
-  { role: "Breaking Judges", names: ["Baldi", "RTA", "Kellz"] },
-  { role: "Breaking DJ", names: ["DJ KingX"] },
-  { role: "Hip-Hop Battle Judges", names: ["Keda", "McKersin", "DOA"] },
-  { role: "Hip-Hop DJ", names: ["DJ Trends"] },
-  { role: "Performances", names: ["Mill Advised", "More TBA"] },
+export const danceJamArtists: Artist[] = [
+  { id: "dj-host", name: "Elmstreet", role: "Host", bio: "" },
+  { id: "dj-breaking-judges", name: "Baldi · RTA · Kellz", role: "Breaking Judges", bio: "" },
+  { id: "dj-breaking-dj", name: "DJ KingX", role: "Breaking DJ", bio: "" },
+  { id: "dj-hiphop-judges", name: "Keda · McKersin · DOA", role: "Hip-Hop Battle Judges", bio: "" },
+  { id: "dj-hiphop-dj", name: "DJ Trends", role: "Hip-Hop DJ", bio: "" },
+  { id: "dj-performances", name: "Mill Advised · More TBA", role: "Performances", bio: "" },
 ];
 
 export type Venue = {
