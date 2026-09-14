@@ -1,9 +1,19 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
+import flyer from "@/assets/kickoff-flyer.webp.asset.json";
 import badge from "@/assets/lhhf-badge.png.asset.json";
 import { ExternalButton, InternalButton } from "@/components/site/Button";
 import { SiteLayout } from "@/components/site/Layout";
-import { donateUrl, festivalDates, headliners, mission, socialLinks, ticketUrl } from "@/content";
+import {
+  donateUrl,
+  festivalDates,
+  headliners,
+  missionElements,
+  missionIntro,
+  missionRooted,
+  socialLinks,
+  ticketUrl,
+} from "@/content";
 import { formatShortDate, getPublicEvents, isUpcoming } from "@/lib/events";
 
 const title = "Lowell Hip-Hop Festival — October 10–18, 2026";
