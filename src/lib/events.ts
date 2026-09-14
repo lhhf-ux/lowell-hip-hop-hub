@@ -68,6 +68,11 @@ export function monthName(month: number): string {
   return MONTHS[month - 1] ?? "";
 }
 
+/** Google Maps search link for a venue name/address. */
+export function googleMapsUrl(query: string): string {
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+}
+
 export function initialsFor(name: string): string {
   return name
     .split(/\s+/)
