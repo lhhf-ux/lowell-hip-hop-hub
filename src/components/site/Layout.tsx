@@ -1,7 +1,7 @@
 import { useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 
-import { fiscalSponsorshipLine, socialLinks, spotifyPlaylistUrl } from "@/content";
+import { fiscalSponsorshipLine, footerTagline, socialLinks, spotifyPlaylistUrl } from "@/content";
 import { FacebookIcon, InstagramIcon } from "./SocialIcons";
 
 const navItems = [
