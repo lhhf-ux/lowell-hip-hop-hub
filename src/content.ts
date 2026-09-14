@@ -79,7 +79,7 @@ export const events: FestEvent[] = [
     venue: "Taffeta Music Hall",
     mapQuery: "Taffeta Music Hall, 110 Western Ave, Lowell, MA",
     description:
-      "The festival opens with Jungle Brothers and Termanology, backed by a deep bill of Lowell and 978 artists, with breaking and dance cypher interludes throughout the night — plenty of chances for you to get loose on the dance floor.",
+      "The festival opens with Jungle Brothers and Termanology, backed by a deep bill of Lowell and 978 artists, with breaking and dance cypher interludes throughout the night — plenty of chances for you to get loose on the dance floor. All ages welcome with a parent or guardian; 18+ unaccompanied.",
     ticketUrl,
     category: "festival",
   },
