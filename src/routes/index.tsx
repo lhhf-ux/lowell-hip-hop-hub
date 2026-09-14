@@ -35,9 +35,10 @@ export const Route = createFileRoute("/")({
 });
 
 function HomePage() {
-  const upcomingFestival = currentSponsors
-    .filter((s) => s.tier === "gold");
-  const upcomingEvents = [];
+  const goldSponsors = currentSponsors.filter((s) => s.tier === "gold");
+  const upcomingEvents = getPublicEvents()
+    .filter((e) => isUpcoming(e) && e.category === "festival")
+    .slice(0, 4);
 
   return (
     <SiteLayout>
