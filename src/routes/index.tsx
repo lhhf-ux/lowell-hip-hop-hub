@@ -144,7 +144,7 @@ function HomePage() {
             </Link>
           </div>
           <ul className="mt-8 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
-            {upcomingFestival.map((event) => (
+            {upcomingEvents.map((event) => (
               <li key={event.id} className="bg-cardgray p-6">
                 <p className="eyebrow text-gold">
                   {formatShortDate(event.date)} · {event.time}
