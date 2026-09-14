@@ -1,7 +1,7 @@
 import { useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 
-import { fiscalSponsorshipLine, socialLinks } from "@/content";
+import { fiscalSponsorshipLine, socialLinks, spotifyPlaylistUrl } from "@/content";
 import { FacebookIcon, InstagramIcon } from "./SocialIcons";
 
 const navItems = [
@@ -14,6 +14,10 @@ const navItems = [
   { to: "/sponsors", label: "Sponsors" },
   { to: "/get-involved", label: "Get Involved" },
   { to: "/about", label: "About" },
+];
+
+const externalNavItems = [
+  { href: spotifyPlaylistUrl, label: "Listen" },
 ];
 
 function Header() {
@@ -38,6 +42,18 @@ function Header() {
                 >
                   {item.label}
                 </Link>
+              </li>
+            ))}
+            {externalNavItems.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="label-type text-xs text-offwhite hover:text-gold"
+                >
+                  {item.label}
+                </a>
               </li>
             ))}
           </ul>
@@ -68,6 +84,18 @@ function Header() {
                 >
                   {item.label}
                 </Link>
+              </li>
+            ))}
+            {externalNavItems.map((item) => (
+              <li key={item.href} className="border-b border-border last:border-b-0">
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="label-type block py-3 text-sm text-offwhite"
+                >
+                  {item.label}
+                </a>
               </li>
             ))}
           </ul>

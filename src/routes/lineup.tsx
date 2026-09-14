@@ -6,6 +6,7 @@ import {
   danceJamArtists,
   headliners,
   oct17Artists,
+  spotifyPlaylistUrl,
   supportArtists,
   ticketUrl,
 } from "@/content";
@@ -44,6 +45,20 @@ function LineupPage() {
         title="The Lineup"
         intro="Legends of the genre alongside the artists carrying Lowell and the 978 right now."
       />
+
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
+        <div className="border-2 border-gold bg-cardgray p-6 sm:p-8">
+          <p className="eyebrow text-gold">Spotify Playlist</p>
+          <h2 className="mt-3 text-2xl text-offwhite sm:text-3xl">Hear the artists</h2>
+          <p className="mt-3 text-concrete">
+            We put together a playlist with tracks from the 2026 lineup. Give it a listen before the
+            festival.
+          </p>
+          <div className="mt-6">
+            <ExternalButton href={spotifyPlaylistUrl}>Open on Spotify</ExternalButton>
+          </div>
+        </div>
+      </section>
 
       <section className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
         <h2 className="text-3xl text-offwhite sm:text-4xl">Headliners</h2>
