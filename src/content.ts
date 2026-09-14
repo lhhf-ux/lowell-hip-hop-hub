@@ -54,6 +54,14 @@ export const missionElements = [
   "Graffiti (public art/murals)",
 ];
 
+export const yearOneEyebrow = "Year 1";
+export const yearOneHeading = "Hip-hop as part of Lowell's story";
+export const yearOneStory = [
+  "For 200 years, Lowell has been a place where cultures meet, traditions evolve, and new generations make something of their own.",
+  "Hip-hop carries that same spirit. Born from many cultures and made uniquely American, it has become a global culture of creativity, community, and connection.",
+  "The Lowell Hip-Hop Festival is proud to celebrate Lowell's Bicentennial by bringing those stories together: honoring where we come from, celebrating who we are, and creating something new for the next generation.",
+];
+
 export const aboutStory = [
   "Lowell has always made noise. From the mills to the mic, this is a city that builds things loudly and shares them freely. The Lowell Hip-Hop Festival grew out of that same instinct: a week of shows, workshops, battles, and cyphers put together by the people who live here.",
   "We started as a handful of artists, DJs, dancers, and organizers who wanted one week where the whole culture had a home downtown — not a side stage at somebody else's event. Every year we bring legends of the genre together with the 978 artists who are pushing it forward right now.",
