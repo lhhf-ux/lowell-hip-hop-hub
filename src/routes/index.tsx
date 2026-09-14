@@ -86,17 +86,12 @@ function HomePage() {
               />
             </div>
             <div>
-              <p className="eyebrow text-gold">Year 1</p>
-              <h2 className="mt-4 text-3xl text-offwhite sm:text-5xl">Hip-hop is part of Lowell's story</h2>
+              <p className="eyebrow text-gold">{yearOneEyebrow}</p>
+              <h2 className="mt-4 text-3xl text-offwhite sm:text-5xl">{yearOneHeading}</h2>
               <div className="mt-5 space-y-5 text-lg leading-relaxed text-concrete">
-                <p>
-                  In 2026, Lowell marks 200 years of making, moving, and remaking itself. The Lowell Hip-Hop Festival
-                  joins that Bicentennial celebration by putting hip-hop where it belongs: at the center of the city's
-                  culture, fabric, and being.
-                </p>
-                <p>
-                  This first year is a statement — the mills built the city, and the culture still builds community.
-                </p>
+                {yearOneStory.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
               </div>
             </div>
           </div>
