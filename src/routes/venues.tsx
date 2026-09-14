@@ -3,7 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHeader, SiteLayout } from "@/components/site/Layout";
 import { venues } from "@/content";
 import { getPublicEvents } from "@/lib/events";
-import { formatShortDate } from "@/lib/events";
+import { formatShortDate, googleMapsUrl } from "@/lib/events";
 
 const title = "Venues — Lowell Hip-Hop Festival";
 const description =
@@ -37,7 +37,16 @@ function VenuesPage() {
             const here = events.filter((event) => event.venue.startsWith(venue.name.split(" at ")[0] ?? venue.name));
             return (
               <article key={venue.id} className="bg-cardgray p-6 sm:p-8">
-                <h2 className="text-2xl text-offwhite sm:text-3xl">{venue.name}</h2>
+                <h2 className="text-2xl text-offwhite sm:text-3xl">
+                  <a
+                    href={googleMapsUrl(`${venue.name}, ${venue.address}`)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline decoration-2 underline-offset-4 hover:text-gold"
+                  >
+                    {venue.name}
+                  </a>
+                </h2>
                 <p className="label-type mt-2 text-sm text-gold">{venue.address}</p>
                 <p className="mt-4 text-concrete">{venue.description}</p>
                 {here.length > 0 ? (
