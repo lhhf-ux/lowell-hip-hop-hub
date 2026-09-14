@@ -133,7 +133,7 @@ export function PageHeader({
     <section className="grain border-b-2 border-border bg-vinyl">
       <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
         <p className="eyebrow text-gold">{eyebrow}</p>
-        <h1 className="mt-4 text-4xl text-offwhite sm:text-6xl">{title}</h1>
+        <h1 className="mt-4 text-5xl text-offwhite sm:text-7xl">{title}</h1>
         {intro ? <p className="mt-5 max-w-2xl text-concrete">{intro}</p> : null}
       </div>
     </section>
