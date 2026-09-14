@@ -78,7 +78,7 @@ export const events: FestEvent[] = [
     date: "2026-10-13",
     time: "4:00 – 6:00 PM",
     title: "Learn to Dance Workshop",
-    venue: "GEN Studio (Western Ave)",
+    venue: "GEN Studio (Western Ave Studios)",
     mapQuery: "GEN Studio, Western Ave Studios, Lowell, MA",
     description:
       "An open-level introduction to breaking and hip-hop dance foundations, led by Justin. No experience needed — just wear sneakers.",
@@ -286,7 +286,7 @@ export const venues: Venue[] = [
   },
   {
     id: "gen-studio",
-    name: "GEN Studio at Western Ave Studios",
+    name: "GEN Studio (Western Ave Studios)",
     address: "Western Ave, Lowell, MA",
     description: "A working dance studio inside the Western Ave arts complex, and the site of our dance workshop.",
   },
