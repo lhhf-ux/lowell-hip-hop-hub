@@ -92,7 +92,7 @@ export const events: FestEvent[] = [
     venue: "Warp & Weft",
     mapQuery: "Warp & Weft, Market St, Lowell, MA",
     description:
-      "Hosted by Chris, Warp & Weft's resident Alex Trebek. Bring a team, argue about samples, and settle it on the scoreboard. Golden-age deep cuts to current 978 releases.",
+      "Hosted by Chris, Warp & Weft's resident Alex Trebek. Bring a team, argue about samples, and settle it on the scoreboard. Golden-age deep cuts to current releases.",
     category: "festival",
   },
   {
