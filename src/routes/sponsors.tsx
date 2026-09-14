@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { ExternalButton } from "@/components/site/Button";
 import { PageHeader, SiteLayout } from "@/components/site/Layout";
-import { donateUrl, fiscalSponsorshipLine, sponsorTiers } from "@/content";
+import { currentSponsors, donateUrl, fiscalSponsorshipLine, sponsorTiers } from "@/content";
 
 const title = "Sponsors — Lowell Hip-Hop Festival";
 const description =
@@ -21,6 +21,9 @@ export const Route = createFileRoute("/sponsors")({
 });
 
 function SponsorsPage() {
+  const goldSponsors = currentSponsors.filter((s) => s.tier === "gold");
+  const silverSponsors = currentSponsors.filter((s) => s.tier === "silver");
+
   return (
     <SiteLayout>
       <PageHeader
@@ -30,7 +33,59 @@ function SponsorsPage() {
       />
 
       <section className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
-        <div className="grid gap-px bg-border lg:grid-cols-3">
+        <div className="border-2 border-gold bg-vinyl p-8 sm:p-12">
+          <p className="eyebrow text-gold">Current sponsors</p>
+
+          {goldSponsors.length > 0 && (
+            <div className="mt-8">
+              <h2 className="text-2xl text-offwhite sm:text-3xl">Gold Sponsors</h2>
+              <div className="mt-6 grid gap-6 sm:grid-cols-2">
+                {goldSponsors.map((sponsor) => (
+                  <a
+                    key={sponsor.id}
+                    href={sponsor.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center bg-offwhite p-6 transition-opacity hover:opacity-90"
+                    aria-label={`${sponsor.name} (opens in new tab)`}
+                  >
+                    <img
+                      src={sponsor.logoAsset.url}
+                      alt={sponsor.name}
+                      className="max-h-32 w-full object-contain"
+                    />
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {silverSponsors.length > 0 && (
+            <div className="mt-10">
+              <h2 className="text-2xl text-offwhite sm:text-3xl">Silver Sponsors</h2>
+              <div className="mt-6 grid gap-6 sm:grid-cols-2">
+                {silverSponsors.map((sponsor) => (
+                  <a
+                    key={sponsor.id}
+                    href={sponsor.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center bg-offwhite p-6 transition-opacity hover:opacity-90"
+                    aria-label={`${sponsor.name} (opens in new tab)`}
+                  >
+                    <img
+                      src={sponsor.logoAsset.url}
+                      alt={sponsor.name}
+                      className="max-h-28 w-full object-contain"
+                    />
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+
+        <div className="mt-14 grid gap-px bg-border lg:grid-cols-3">
           {sponsorTiers.map((tier) => (
             <article key={tier.id} className="bg-cardgray p-6 sm:p-8">
               <p className="eyebrow text-gold">{tier.amount}</p>
