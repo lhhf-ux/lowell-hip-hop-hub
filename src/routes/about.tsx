@@ -43,7 +43,7 @@ function AboutPage() {
             {elements.map((element) => (
               <div key={element.name} className="bg-vinyl p-6">
                 <dt className="text-2xl text-gold">{element.name}</dt>
-                <dd className="mt-2 text-concrete">{element.detail}</dd>
+                <dd className="mt-2 text-concrete">({element.detail})</dd>
               </div>
             ))}
           </dl>
