@@ -43,6 +43,8 @@ export const socialLinks = {
 export const fiscalSponsorshipLine =
   "The Lowell Hip-Hop Festival operates under the fiscal sponsorship of the Greater Lowell Community Foundation, a 501(c)(3) public charity.";
 
+export const footerTagline = "Welcoming the world since 1826. Keeping it moving since 2026.";
+
 export const missionIntro =
   "A multicultural, family-friendly festival that welcomes a diverse audience into Lowell, featuring music, dance, and public art that highlights local artists & reflects the city's cultural diversity.";
 
