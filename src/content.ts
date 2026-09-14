@@ -46,10 +46,10 @@ export const missionRooted =
   "Rooted in Lowell's hip-hop and creative scenes, the festival celebrates and inspires through the four elements of hip-hop:";
 
 export const missionElements = [
-  { name: "MCing", detail: "rapping" },
-  { name: "DJing", detail: "turntablism" },
-  { name: "Breaking", detail: "dance" },
-  { name: "Graffiti", detail: "public art/murals" },
+  "MCing (rapping)",
+  "DJing (turntablism)",
+  "Breaking (dance)",
+  "Graffiti (public art/murals)",
 ];
 
 export const aboutStory = [

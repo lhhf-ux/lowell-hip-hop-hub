@@ -36,17 +36,14 @@ function AboutPage() {
       </section>
 
       <section className="border-y-2 border-border bg-cardgray">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
+        <div className="mx-auto max-w-3xl px-4 py-14 sm:py-20">
           <h2 className="text-3xl text-offwhite sm:text-4xl">The Four Elements</h2>
-          <p className="mt-4 max-w-3xl text-lg text-concrete">{missionRooted}</p>
-          <dl className="mt-8 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+          <p className="mt-4 text-lg text-concrete">{missionRooted}</p>
+          <ul className="mt-6 list-disc space-y-2 pl-5 text-lg text-concrete">
             {elements.map((element) => (
-              <div key={element.name} className="bg-vinyl p-6">
-                <dt className="text-2xl text-gold">{element.name}</dt>
-                <dd className="mt-2 text-concrete">({element.detail})</dd>
-              </div>
+              <li key={element}>{element}</li>
             ))}
-          </dl>
+          </ul>
         </div>
       </section>
 
