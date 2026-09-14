@@ -1,7 +1,6 @@
 import { useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 
-import wordmark from "@/assets/lhhf-wordmark.png.asset.json";
 import { fiscalSponsorshipLine, socialLinks } from "@/content";
 import { FacebookIcon, InstagramIcon } from "./SocialIcons";
 
@@ -24,7 +23,7 @@ function Header() {
     <header className="border-b-4 border-gold bg-vinyl">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4">
         <Link to="/" className="block shrink-0" onClick={() => setOpen(false)}>
-          <img src={wordmark.url} alt="Lowell Hip-Hop Festival" className="h-12 w-auto sm:h-14" />
+          <img src="/images/lhhf-wordmark.png" alt="Lowell Hip-Hop Festival" className="h-12 w-auto sm:h-14" />
         </Link>
 
         <nav aria-label="Main" className="hidden lg:block">

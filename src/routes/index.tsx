@@ -1,8 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
-import flyer from "@/assets/kickoff-flyer.webp.asset.json";
-import badge from "@/assets/lhhf-logo-white-640.png.asset.json";
-import bicentennialLogo from "@/assets/lowell-bicentennial-logo.png.asset.json";
 import { ExternalButton, InternalButton } from "@/components/site/Button";
 import { SiteLayout } from "@/components/site/Layout";
 import {
@@ -65,7 +62,7 @@ function HomePage() {
           </div>
           <div className="justify-self-center">
             <img
-              src={badge.url}
+              src="/images/lhhf-logo-white-640.png"
               alt="Lowell Hip-Hop Festival logo"
               className="w-56 max-w-full sm:w-80"
               width={320}
@@ -80,7 +77,7 @@ function HomePage() {
           <div className="grid gap-10 lg:grid-cols-[1fr_1.2fr]">
             <div className="flex items-center justify-center bg-offwhite p-8">
               <img
-                src={bicentennialLogo.url}
+                src="/images/lowell-bicentennial-logo.png"
                 alt="Lowell Bicentennial 1826–2026"
                 className="max-h-64 w-full object-contain"
               />
@@ -105,7 +102,7 @@ function HomePage() {
           <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_1.1fr]">
             <a href={ticketUrl} target="_blank" rel="noopener noreferrer" className="block">
               <img
-                src={flyer.url}
+                src="/images/kickoff-flyer.webp"
                 alt="Kick-off Concert flyer: Jungle Brothers and Termanology, Saturday October 10 at 6pm, Taffeta Music Hall, 110 Western Ave, Lowell MA"
                 className="w-full border-2 border-border"
                 loading="lazy"
@@ -170,7 +167,7 @@ function HomePage() {
                 aria-label={`${sponsor.name} (opens in new tab)`}
               >
                 <img
-                  src={sponsor.logoAsset.url}
+                  src={sponsor.logoUrl}
                   alt={sponsor.name}
                   className="max-h-40 w-full object-contain"
                 />
