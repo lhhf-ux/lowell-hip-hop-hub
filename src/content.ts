@@ -8,6 +8,8 @@ export type FestEvent = {
   time: string;
   title: string;
   venue: string;
+  /** Search string used for the venue's Google Maps link. */
+  mapQuery?: string;
   description: string;
   ticketUrl?: string;
   category: EventCategory;
