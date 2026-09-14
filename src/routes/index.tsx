@@ -61,7 +61,16 @@ function HomePage() {
       <section className="border-b-2 border-border bg-cardgray">
         <div className="mx-auto max-w-4xl px-4 py-14 text-center sm:py-20">
           <p className="eyebrow text-gold">Our Mission</p>
-          <p className="mt-5 text-xl leading-relaxed text-offwhite sm:text-2xl">{mission}</p>
+          <p className="mt-5 text-xl leading-relaxed text-offwhite sm:text-2xl">{missionIntro}</p>
+          <p className="mt-6 text-lg leading-relaxed text-concrete">{missionRooted}</p>
+          <ul className="mt-6 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+            {missionElements.map((element) => (
+              <li key={element.name} className="bg-vinyl px-4 py-5">
+                <p className="label-type text-lg text-gold">{element.name}</p>
+                <p className="mt-1 text-sm text-concrete">({element.detail})</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
