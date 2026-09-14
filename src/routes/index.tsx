@@ -16,7 +16,7 @@ import {
   socialLinks,
   ticketUrl,
 } from "@/content";
-import { formatShortDate, isUpcoming } from "@/lib/events";
+import { formatShortDate, getPublicEvents, isUpcoming } from "@/lib/events";
 
 const title = "Lowell Hip-Hop Festival — October 10–18, 2026";
 const description =
