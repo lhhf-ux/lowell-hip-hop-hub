@@ -37,13 +37,15 @@ function AboutPage() {
 
       <section className="border-y-2 border-border bg-cardgray">
         <div className="mx-auto max-w-3xl px-4 py-14 sm:py-20">
-          <h2 className="text-3xl text-offwhite sm:text-4xl">The Four Elements</h2>
-          <p className="mt-4 text-lg text-concrete">{missionRooted}</p>
-          <ul className="mt-6 list-disc space-y-2 pl-5 text-lg text-concrete">
-            {elements.map((element) => (
-              <li key={element}>{element}</li>
-            ))}
-          </ul>
+          <h2 className="text-4xl text-offwhite sm:text-5xl">The Four Elements</h2>
+          <div className="mt-6 space-y-4 text-lg leading-relaxed text-concrete">
+            <p>{missionRooted}</p>
+            <ul className="list-disc space-y-2 pl-5">
+              {elements.map((element) => (
+                <li key={element}>{element}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
