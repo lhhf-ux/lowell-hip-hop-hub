@@ -121,7 +121,7 @@ export const events: FestEvent[] = [
     venue: "The Hive Market",
     mapQuery: "The Hive Market, Lowell, MA",
     description:
-      "Hip-Hop 101 is led by CabbHoppa1 — the history of the culture and its four elements — followed by a hands-on graffiti lettering session led by Xavier Dobbins. All ages welcome.",
+      "Hip-Hop 101 is led by CabbHoppa1 — the history of the culture and its four elements — followed by a hands-on graffiti lettering session led by Xavier Robbins. All ages welcome.",
     category: "festival",
   },
   {
