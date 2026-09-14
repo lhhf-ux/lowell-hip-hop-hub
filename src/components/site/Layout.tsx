@@ -131,7 +131,7 @@ function Footer() {
         </div>
 
         <p className="mx-auto mt-8 max-w-2xl text-sm text-concrete">{fiscalSponsorshipLine}</p>
-        <p className="eyebrow mt-6 text-concrete">Lowell, Massachusetts</p>
+        <p className="eyebrow mt-6 text-concrete">{footerTagline}</p>
       </div>
     </footer>
   );
