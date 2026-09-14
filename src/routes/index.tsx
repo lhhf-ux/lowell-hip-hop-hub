@@ -15,6 +15,9 @@ import {
   missionRooted,
   socialLinks,
   ticketUrl,
+  yearOneEyebrow,
+  yearOneHeading,
+  yearOneStory,
 } from "@/content";
 import { formatShortDate, getPublicEvents, isUpcoming } from "@/lib/events";
 
