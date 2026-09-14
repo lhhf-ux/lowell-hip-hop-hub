@@ -67,6 +67,7 @@ export const events: FestEvent[] = [
     time: "6:00 PM",
     title: "Kick-off Concert",
     venue: "Taffeta Music Hall",
+    mapQuery: "Taffeta Music Hall, 110 Western Ave, Lowell, MA",
     description:
       "The festival opens with Jungle Brothers and Termanology, backed by a deep bill of Lowell and 978 artists.",
     ticketUrl,
@@ -78,8 +79,9 @@ export const events: FestEvent[] = [
     time: "4:00 – 6:00 PM",
     title: "Learn to Dance Workshop",
     venue: "GEN Studio (Western Ave)",
+    mapQuery: "GEN Studio, Western Ave Studios, Lowell, MA",
     description:
-      "An open-level introduction to breaking and hip-hop dance foundations. No experience needed — just wear sneakers.",
+      "An open-level introduction to breaking and hip-hop dance foundations, led by Justin. No experience needed — just wear sneakers.",
     category: "festival",
   },
   {
@@ -88,8 +90,9 @@ export const events: FestEvent[] = [
     time: "7:00 PM",
     title: "Hip-Hop Trivia",
     venue: "Warp & Weft",
+    mapQuery: "Warp & Weft, Market St, Lowell, MA",
     description:
-      "Bring a team, argue about samples, and settle it on the scoreboard. Golden-age deep cuts to current 978 releases.",
+      "Hosted by Chris, Warp & Weft's resident Alex Trebek. Bring a team, argue about samples, and settle it on the scoreboard. Golden-age deep cuts to current 978 releases.",
     category: "festival",
   },
   {
@@ -98,6 +101,7 @@ export const events: FestEvent[] = [
     time: "8:00 PM",
     title: "DJ Myth",
     venue: "Warp & Weft",
+    mapQuery: "Warp & Weft, Market St, Lowell, MA",
     description: "A full night on the tables — turntablism, crate digging, and a floor that does not sit down.",
     category: "festival",
   },
@@ -107,8 +111,9 @@ export const events: FestEvent[] = [
     time: "12:00 PM",
     title: "Hip-Hop 101 and Graffiti Lettering Workshop",
     venue: "The Hive Market",
+    mapQuery: "The Hive Market, Lowell, MA",
     description:
-      "The history of the culture and its four elements, followed by a hands-on lettering session. All ages welcome.",
+      "Hip-Hop 101 is led by CabbHoppa1 — the history of the culture and its four elements — followed by a hands-on graffiti lettering session led by Xavier Dobbins. All ages welcome.",
     category: "festival",
   },
   {
@@ -117,7 +122,9 @@ export const events: FestEvent[] = [
     time: "8:00 PM",
     title: "Fee & the Evolutionists",
     venue: "Warp & Weft",
-    description: "Live band hip-hop at full volume to close out Saturday night.",
+    mapQuery: "Warp & Weft, Market St, Lowell, MA",
+    description:
+      "A live soul and hip-hop band fronted by Fee, an MC with a golden-era flow, and Ruby Shabazz, whose vocals come straight out of classic R&B, backed by some of the most accomplished musicians in New England. Fee was part of the classic Lowell hip-hop group X-Caliber and he co-wrote and rapped on \"One Hit to the Body\" with D-Tension, the song Micky Ward walked out to for the first Gatti fight.",
     category: "festival",
   },
   {
@@ -126,6 +133,7 @@ export const events: FestEvent[] = [
     time: "1:00 PM",
     title: "Dance Jam Finale",
     venue: "Tescobar Performance Center",
+    mapQuery: "Tescobar Performance Center, Lowell, MA",
     description:
       "Breaking and hip-hop dance battles, dance showcases, cyphers and circles to close the festival out.",
     category: "festival",
@@ -136,6 +144,7 @@ export const events: FestEvent[] = [
     time: "12:00 – 12:30 PM",
     title: "Lowell Kinetic Sculpture Race",
     venue: "Sampas Pavilion, Pawtucket Blvd.",
+    mapQuery: "Sampas Pavilion, Pawtucket Blvd, Lowell, MA",
     description: "Catch us trackside with music, festival info, and a few surprises.",
     category: "community",
   },
@@ -145,6 +154,7 @@ export const events: FestEvent[] = [
     time: "12:00 – 5:00 PM",
     title: "Open Streets Lowell",
     venue: "Merrimack St., Downtown Lowell",
+    mapQuery: "Merrimack St, Lowell, MA",
     description:
       "A full afternoon downtown — come say hello, grab festival info, and catch some music in the street.",
     category: "community",
