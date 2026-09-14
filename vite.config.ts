@@ -7,6 +7,19 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  // Pin the deploy target. On Cloudflare Pages the CI environment otherwise
+  // auto-selects the `cloudflare-pages` preset, which writes the server to
+  // dist/_worker.js/ and the client to dist/ — the prerender step then can't
+  // find dist/server/server.js and every route 500s.
+  nitro: {
+    preset: "cloudflare-module",
+    output: {
+      dir: "dist",
+      serverDir: "dist/server",
+      publicDir: "dist/client",
+    },
+    cloudflare: { nodeCompat: true },
+  },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
