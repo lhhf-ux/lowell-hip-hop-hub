@@ -187,7 +187,7 @@ export const headliners: Artist[] = [
     id: "termanology",
     name: "Termanology",
     role: "Local 978 Legend",
-    bio: "Termanology is a rapper and producer from Lawrence whose 2008 album Politics as Usual featured production from DJ Premier, Pete Rock, Large Professor and the Alchemist, and he's followed it up with collaborative albums alongside Paul Wall, Statik Selektah, Myster DL, and more. He has more than 60 projects out and counting. He currently resides in Lowell and regularly records at Lowell's own Wonka Sound. He is the proof this festival exists to make visible: the 978 has been and continues to produce world-class MCs.",
+    bio: "Termanology is a rapper and producer from Lawrence whose 2008 album Politics as Usual featured production from DJ Premier, Pete Rock, Large Professor and the Alchemist, and he's followed it up with collaborative albums alongside Paul Wall, Statik Selektah, Myster DL, and more. He now has more than 60 projects out and counting. He currently resides in Lowell and regularly records at Lowell's own Wonka Sound. He is the proof the 978 has been and is continuing to produce world-class MCs.",
   },
 ];
 
