@@ -40,8 +40,7 @@ function HomePage() {
       <section className="grain border-b-4 border-graffiti bg-vinyl">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:py-24 lg:grid-cols-[1.4fr_1fr]">
           <div>
-            <p className="eyebrow text-gold">Lowell, Massachusetts · Nonprofit</p>
-            <h1 className="mt-4 text-5xl leading-[0.95] text-offwhite sm:text-7xl">
+            <h1 className="text-5xl leading-[0.95] text-offwhite sm:text-7xl">
               Lowell Hip-Hop Festival
             </h1>
             <p className="label-type mt-5 inline-block bg-graffiti px-4 py-2 text-lg text-offwhite">
