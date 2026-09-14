@@ -39,8 +39,18 @@ export const socialLinks = {
 export const fiscalSponsorshipLine =
   "The Lowell Hip-Hop Festival operates under the fiscal sponsorship of the Greater Lowell Community Foundation, a 501(c)(3) public charity.";
 
-export const mission =
-  "A multicultural, family-friendly festival that welcomes a diverse audience into Lowell, featuring music, dance, and public art that highlights local artists & reflects the city's cultural diversity. Rooted in Lowell's hip-hop and creative scenes, the festival celebrates and inspires through the four elements of hip-hop: MCing (rapping), DJing (turntablism), Breaking (dance), and Graffiti (public art/murals).";
+export const missionIntro =
+  "A multicultural, family-friendly festival that welcomes a diverse audience into Lowell, featuring music, dance, and public art that highlights local artists & reflects the city's cultural diversity.";
+
+export const missionRooted =
+  "Rooted in Lowell's hip-hop and creative scenes, the festival celebrates and inspires through the four elements of hip-hop:";
+
+export const missionElements = [
+  { name: "MCing", detail: "rapping" },
+  { name: "DJing", detail: "turntablism" },
+  { name: "Breaking", detail: "dance" },
+  { name: "Graffiti", detail: "public art/murals" },
+];
 
 export const aboutStory = [
   "Lowell has always made noise. From the mills to the mic, this is a city that builds things loudly and shares them freely. The Lowell Hip-Hop Festival grew out of that same instinct: a week of shows, workshops, battles, and cyphers put together by the people who live here.",

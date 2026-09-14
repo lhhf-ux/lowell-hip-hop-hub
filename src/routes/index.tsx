@@ -1,9 +1,19 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
+import flyer from "@/assets/kickoff-flyer.webp.asset.json";
 import badge from "@/assets/lhhf-badge.png.asset.json";
 import { ExternalButton, InternalButton } from "@/components/site/Button";
 import { SiteLayout } from "@/components/site/Layout";
-import { donateUrl, festivalDates, headliners, mission, socialLinks, ticketUrl } from "@/content";
+import {
+  donateUrl,
+  festivalDates,
+  headliners,
+  missionElements,
+  missionIntro,
+  missionRooted,
+  socialLinks,
+  ticketUrl,
+} from "@/content";
 import { formatShortDate, getPublicEvents, isUpcoming } from "@/lib/events";
 
 const title = "Lowell Hip-Hop Festival — October 10–18, 2026";
@@ -61,7 +71,16 @@ function HomePage() {
       <section className="border-b-2 border-border bg-cardgray">
         <div className="mx-auto max-w-4xl px-4 py-14 text-center sm:py-20">
           <p className="eyebrow text-gold">Our Mission</p>
-          <p className="mt-5 text-xl leading-relaxed text-offwhite sm:text-2xl">{mission}</p>
+          <p className="mt-5 text-xl leading-relaxed text-offwhite sm:text-2xl">{missionIntro}</p>
+          <p className="mt-6 text-lg leading-relaxed text-concrete">{missionRooted}</p>
+          <ul className="mt-6 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
+            {missionElements.map((element) => (
+              <li key={element.name} className="bg-vinyl px-4 py-5">
+                <p className="label-type text-lg text-gold">{element.name}</p>
+                <p className="mt-1 text-sm text-concrete">({element.detail})</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -117,20 +136,33 @@ function HomePage() {
         <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
           <p className="eyebrow text-gold">Kick-off Concert · October 10</p>
           <h2 className="mt-4 text-3xl text-offwhite sm:text-5xl">Jungle Brothers · Termanology</h2>
-          <div className="mt-8 grid gap-px bg-border sm:grid-cols-2">
-            {headliners.map((artist) => (
-              <div key={artist.id} className="bg-cardgray p-6">
-                <p className="eyebrow text-graffiti">{artist.role}</p>
-                <h3 className="mt-2 text-2xl text-offwhite">{artist.name}</h3>
-                <p className="mt-3 text-concrete">{artist.bio}</p>
+          <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_1.1fr]">
+            <a href={ticketUrl} target="_blank" rel="noopener noreferrer" className="block">
+              <img
+                src={flyer.url}
+                alt="Kick-off Concert flyer: Jungle Brothers and Termanology, Saturday October 10 at 6pm, Taffeta Music Hall, 110 Western Ave, Lowell MA"
+                className="w-full border-2 border-border"
+                loading="lazy"
+              />
+            </a>
+            <div>
+              <div className="grid gap-px bg-border">
+                {headliners.map((artist) => (
+                  <div key={artist.id} className="bg-cardgray p-6">
+                    <p className="eyebrow text-graffiti">{artist.role}</p>
+                    <h3 className="mt-2 text-2xl text-offwhite">{artist.name}</h3>
+                    <p className="mt-3 text-concrete">{artist.bio}</p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <InternalButton to="/lineup">Full Lineup</InternalButton>
-            <ExternalButton href={donateUrl} variant="outline">
-              Donate
-            </ExternalButton>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <ExternalButton href={ticketUrl}>Get Tickets</ExternalButton>
+                <InternalButton to="/lineup">Full Lineup</InternalButton>
+                <ExternalButton href={donateUrl} variant="outline">
+                  Donate
+                </ExternalButton>
+              </div>
+            </div>
           </div>
         </div>
       </section>
