@@ -70,7 +70,7 @@ function HomePage() {
 
       <section className="border-b-2 border-border bg-cardgray">
         <div className="mx-auto max-w-4xl px-4 py-14 text-center sm:py-20">
-          <p className="eyebrow text-gold">Our Mission</p>
+          <p className="eyebrow text-gold">About</p>
           <p className="mt-5 text-xl leading-relaxed text-offwhite sm:text-2xl">{missionIntro}</p>
           <p className="mt-6 text-lg leading-relaxed text-concrete">{missionRooted}</p>
           <ul className="mx-auto mt-6 max-w-xl list-disc space-y-2 pl-5 text-left text-lg text-concrete">
