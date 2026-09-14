@@ -1,7 +1,7 @@
 import { useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 
-import wordmark from "@/assets/lhhf-wordmark.png.asset.json";
+import wordmark from "@/assets/lhhf-logo-white-320.png.asset.json";
 import { fiscalSponsorshipLine, socialLinks } from "@/content";
 import { FacebookIcon, InstagramIcon } from "./SocialIcons";
 

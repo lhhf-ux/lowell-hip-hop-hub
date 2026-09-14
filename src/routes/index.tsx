@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import flyer from "@/assets/kickoff-flyer.webp.asset.json";
-import badge from "@/assets/lhhf-badge.png.asset.json";
+import badge from "@/assets/lhhf-logo-white-640.png.asset.json";
 import { ExternalButton, InternalButton } from "@/components/site/Button";
 import { SiteLayout } from "@/components/site/Layout";
 import {
