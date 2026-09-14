@@ -55,11 +55,11 @@ export const missionElements = [
 ];
 
 export const yearOneEyebrow = "Year 1";
-export const yearOneHeading = "Hip-hop as part of Lowell's story";
+export const yearOneHeading = "Hip-hop is part of Lowell's story";
 export const yearOneStory = [
-  "For 200 years, Lowell has been a place where cultures meet, traditions evolve, and new generations make something of their own.",
-  "Hip-hop carries that same spirit. Born from many cultures and made uniquely American, it has become a global culture of creativity, community, and connection.",
-  "The Lowell Hip-Hop Festival is proud to celebrate Lowell's Bicentennial by bringing those stories together: honoring where we come from, celebrating who we are, and creating something new for the next generation.",
+  "For 200 years, Lowell has been a place where cultures meet and new generations make something of their own.",
+  "Hip-hop carries that same spirit. Born from many cultures and truly American, it has become a global culture of creativity and community.",
+  "The Lowell Hip-Hop Festival is proud to celebrate Lowell's Bicentennial by bringing those stories together: honoring where we come from, celebrating who we are, and creating something lasting for future generations.",
 ];
 
 export const aboutStory = [
