@@ -82,9 +82,9 @@ export const oct17Artists: Artist[] = [
 
 export const danceJamArtists: Artist[] = [
   { id: "dj-host", name: "Elmstreet", role: "Host", bio: "" },
-  { id: "dj-breaking-judges", name: "Baldi · RTA · Kellz", role: "Breaking Judges", bio: "" },
+  { id: "dj-breaking-judges", name: "Baldi · RTA · Grinz", role: "Breaking Judges", bio: "" },
   { id: "dj-breaking-dj", name: "DJ KingX", role: "Breaking DJ", bio: "" },
-  { id: "dj-hiphop-judges", name: "Keda · McKersin · DOA", role: "Hip-Hop Battle Judges", bio: "" },
+  { id: "dj-hiphop-judges", name: "Lady Ice · McKersin · D.O.A.", role: "Hip-Hop Battle Judges", bio: "" },
   { id: "dj-hiphop-dj", name: "DJ Trends", role: "Hip-Hop DJ", bio: "" },
   { id: "dj-performances", name: "Mill Advised · More TBA", role: "Performances", bio: "" },
 ];
