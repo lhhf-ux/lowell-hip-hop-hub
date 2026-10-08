@@ -1,11 +1,13 @@
 # Lowell Hip-Hop Festival Site Roadmap
 
 ## Open
-- [ ] Add DJ Myth's logo and Fee & The Evolutionists' band photo beside their Lineup boxes
+- [ ] Await real contact email and volunteer URL to replace placeholders
 - [ ] Await real contact email and volunteer URL to replace placeholders
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
 
 ## Done
+- [x] Added DJ Myth's logo and Fee & The Evolutionists' band photo beside their Lineup boxes
+- [x] Prerendered all nine pages to static HTML so the Cloudflare Pages build completes
 - [x] Added DJ Trends' Instagram and noted DJ Myth often performs with Fee & The Evolutionists
 - [x] Added a researched DJ Myth bio and Concord Monitor feature
 - [x] Added confirmed Instagram handles for Baldi, RTA, Grinz, McKersin and D.O.A.; left Lady Ice unlinked
