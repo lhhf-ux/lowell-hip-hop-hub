@@ -10,6 +10,7 @@ export function EventCard({ event }: { event: FestEvent }) {
     <article id={event.id} className={`scroll-mt-24 border-2 border-border border-l-8 ${accent} bg-cardgray p-5 sm:p-7`}>
       <p className={`eyebrow ${tone}`}>
         {event.category === "partner" ? "Partner Event · " : ""}
+        {event.category === "community" ? "Community Event · " : ""}
         {formatLongDate(event.date)} · {event.time}
       </p>
       <h3 className="mt-3 text-2xl text-offwhite sm:text-3xl">{event.title}</h3>

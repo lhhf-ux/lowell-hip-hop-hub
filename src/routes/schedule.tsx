@@ -2,11 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { EventCard } from "@/components/site/EventCard";
 import { PageHeader, SiteLayout } from "@/components/site/Layout";
+import { festivalDates } from "@/content";
 import { getPublicEvents } from "@/lib/events";
 
 const title = "Festival Schedule — Lowell Hip-Hop Festival 2026";
 const description =
-  "Every festival event from October 10 to 18, 2026: the Kick-off Concert, dance workshop, hip-hop trivia, DJ Myth, Hip-Hop 101, Fee & the Evolutionists, and Mill City Get Down.";
+  "Every festival event from October 10 to 18, 2026: the Kick-off Concert, the Waves of Migration mural unveiling, dance workshop, hip-hop trivia, DJ Myth, Hip-Hop 101, Fee & the Evolutionists, and Mill City Get Down.";
 
 export const Route = createFileRoute("/schedule")({
   head: () => ({
@@ -23,7 +24,14 @@ export const Route = createFileRoute("/schedule")({
 });
 
 function SchedulePage() {
-  const events = getPublicEvents().filter((event) => event.category === "festival" || event.category === "partner");
+  const events = getPublicEvents().filter(
+    (event) =>
+      event.category === "festival" ||
+      event.category === "partner" ||
+      (event.category === "community" &&
+        event.date >= festivalDates.start &&
+        event.date <= festivalDates.end),
+  );
 
   return (
     <SiteLayout>
