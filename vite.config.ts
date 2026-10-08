@@ -39,4 +39,18 @@ export default defineConfig({
     ],
     prerender: { enabled: true, autoStaticPathsDiscovery: false },
   },
+  // The build wrapper writes its prerender preview shim to
+  // `<environments.ssr.build.outDir>/server.js`, but Nitro points that
+  // environment at node_modules/.nitro/vite/services/ssr, while TanStack's
+  // preview server imports `dist/server/server.js`. Pinning the SSR outDir to
+  // Nitro's server dir puts the shim where the preview server looks for it.
+  vite: {
+    environments: {
+      ssr: {
+        build: {
+          outDir: "dist/server",
+        },
+      },
+    },
+  },
 });
