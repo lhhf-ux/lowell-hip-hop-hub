@@ -58,7 +58,10 @@ export const supportArtists: Artist[] = [
     role: "Collective",
     bio: "A Lowell scream-rap and scenecore collective built around the voices of Stardust World, Rottenegg, and Hazel Adeline. Their queer-friendly, defiant live shows and monthly themed events have made them a fixture of the Greater Lowell and Boston rap and rave scenes — proof the culture is still growing new branches in this city.",
     links: [
+      { label: "Mill City Madness on Instagram", url: "https://www.instagram.com/m1ll.c1ty.madn3ss/" },
       { label: "Stardust World on Instagram", url: "https://www.instagram.com/stardust._.world/" },
+      { label: "Rottenegg on Instagram", url: "https://www.instagram.com/rxttenegg/" },
+      { label: "Hazel Adeline on Instagram", url: "https://www.instagram.com/thehazeladeline/" },
       { label: "Hazel Adeline on Bandcamp", url: "https://thehazeladeline.bandcamp.com/" },
     ],
   },
@@ -68,7 +71,7 @@ export const supportArtists: Artist[] = [
     role: "MC / Vocalist",
     bio: "A Lowell MC, poet and vocalist who moves between stages across genres and audiences, from the Southeast Asian Water Festival to a featured poet slot at Lowell Celebrates Kerouac.",
     links: [
-      { label: "Water Festival Feature", url: "https://mosaiclowell.org/news/water-festival-stage-schedule/" },
+      { label: "Instagram", url: "https://www.instagram.com/malissalach/" },
     ],
   },
   {
@@ -77,7 +80,7 @@ export const supportArtists: Artist[] = [
     role: "MC",
     bio: "A muralist and hip-hop culture advocate who works from a deep knowledge of where the culture came from, connecting art to the communities it lives in. He's also leading Hip-Hop 101 at The Hive on the 17th.",
     links: [
-      { label: "Open Streets Lineup", url: "https://www.openstreetslowell.org/things-to-do/" },
+      { label: "Instagram", url: "https://www.instagram.com/cabbhoppa/" },
     ],
   },
   {
@@ -107,6 +110,7 @@ export const supportArtists: Artist[] = [
     role: "MC",
     bio: "A Lowell local and underground MC who has been at it since 2004, building a sound on raw lyricism and horror-inspired darkness that answers to the 978 and nothing else.",
     links: [
+      { label: "Instagram", url: "https://www.instagram.com/Persona978/" },
       { label: "Spotify", url: "https://open.spotify.com/artist/0xMSvSiwoAEbT9Ak7cHup5" },
       { label: "Artist Profile", url: "https://slaps.com/Persona978" },
     ],
@@ -117,6 +121,7 @@ export const supportArtists: Artist[] = [
     role: "MC",
     bio: "A New Hampshire b-boy, graffiti writer, battler and MC with records featuring Kool Keith, Mr. Lif, Reks, Termanology, and many more. He is a one-man argument for the four-element framing this festival is built on.",
     links: [
+      { label: "Instagram", url: "https://www.instagram.com/apethegrim/" },
       { label: "Bandcamp", url: "https://apethegrim.bandcamp.com/" },
     ],
   },
@@ -152,9 +157,10 @@ export const kickoffDJs: Artist[] = [
     id: "elmstreet-kickoff",
     name: "Elmstreet",
     role: "DJ & Host",
-    bio: "Elmstreet joins the Kick-off Concert as a DJ and host, then returns to host Mill City Get Down on October 18. His local appearances include an Open Streets Lowell lineup alongside Malissa Lach and CabbHoppa1, presented by the Lowell Hip-Hop Festival.",
+    bio: "Elmstreet, real name Elmer Martinez, is a Lowell native who joins the Kick-off Concert as a DJ and host, then returns to host Mill City Get Down on October 18.",
     links: [
-      { label: "Open Streets Lineup", url: "https://www.openstreetslowell.org/things-to-do/" },
+      { label: "Instagram", url: "https://www.instagram.com/daoriginal96/" },
+      { label: "Read the Lowell Sun feature", url: "https://www.lowellsun.com/2024/01/25/stages-lowell-born-martinez-makes-his-mark-as-lighting-designer-in-boston/" },
     ],
   },
   {
@@ -163,10 +169,21 @@ export const kickoffDJs: Artist[] = [
     role: "DJ & B-boy",
     bio: "DJ KingX is a DJ and b-boy representing Lawtown Assassins. His break tapes are made for the cypher, including the latest installment, Strictly Cyphers 3, released in May 2026. He joins the Kick-off Concert behind the decks and returns as the breaking DJ for Mill City Get Down on October 18.",
     links: [
+      { label: "Instagram", url: "https://www.instagram.com/djkingx978/" },
       { label: "SoundCloud", url: "https://soundcloud.com/djkingxassasins" },
       { label: "Strictly Cyphers 3", url: "https://soundcloud.com/djkingxassasins/strictly-cyphers-3" },
       { label: "Read the Feature", url: "https://hamza21.com/2026/06/08/mix-mondays-born-2-get-down/" },
     ],
+  },
+];
+
+export const oct15Artists: Artist[] = [
+  {
+    id: "dj-myth",
+    name: "DJ Myth",
+    role: "DJ",
+    bio: "",
+    links: [{ label: "Instagram", url: "https://www.instagram.com/djmyth/" }],
   },
 ];
 
@@ -189,15 +206,17 @@ export const danceJamArtists: Artist[] = [
     id: "dj-host",
     name: "Elmstreet",
     role: "Host",
-    bio: "",
-    links: [{ label: "Open Streets Lineup", url: "https://www.openstreetslowell.org/things-to-do/" }],
+    bio: "Elmstreet, real name Elmer Martinez, is a Lowell native and the host of Mill City Get Down.",
+    links: [
+      { label: "Instagram", url: "https://www.instagram.com/daoriginal96/" },
+      { label: "Read the Lowell Sun feature", url: "https://www.lowellsun.com/2024/01/25/stages-lowell-born-martinez-makes-his-mark-as-lighting-designer-in-boston/" },
+    ],
   },
   {
     id: "dj-breaking-judges",
     name: "Baldi · RTA · Grinz",
     role: "Breaking Judges",
     bio: "",
-    links: [{ label: "Watch Born 2 Get Down", url: "https://www.youtube.com/watch?v=1kbQTsbOkZI" }],
   },
   {
     id: "dj-breaking-dj",
@@ -205,6 +224,7 @@ export const danceJamArtists: Artist[] = [
     role: "Breaking DJ",
     bio: "",
     links: [
+      { label: "Instagram", url: "https://www.instagram.com/djkingx978/" },
       { label: "SoundCloud", url: "https://soundcloud.com/djkingxassasins" },
       { label: "Strictly Cyphers 3", url: "https://soundcloud.com/djkingxassasins/strictly-cyphers-3" },
     ],
@@ -214,8 +234,16 @@ export const danceJamArtists: Artist[] = [
     name: "Lady Ice · McKersin · D.O.A.",
     role: "Hip-Hop Battle Judges",
     bio: "",
-    links: [{ label: "Meet McKersin", url: "https://motionstatearts.org/2020-festival-artists/mckersin-previlus" }],
   },
   { id: "dj-hiphop-dj", name: "DJ Trends", role: "Hip-Hop DJ", bio: "" },
-  { id: "dj-performances", name: "Mill Advised · More TBA", role: "Performances", bio: "" },
+  {
+    id: "dj-performances",
+    name: "Mill Advised · GEN Crew · Synergy · The Anomalies · More TBA",
+    role: "Performances",
+    bio: "",
+    links: [
+      { label: "Synergy on Instagram", url: "https://www.instagram.com/synstagrammm/" },
+      { label: "The Anomalies on Instagram", url: "https://www.instagram.com/wearetheanomalies_/" },
+    ],
+  },
 ];
