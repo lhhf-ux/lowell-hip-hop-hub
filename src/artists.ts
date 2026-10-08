@@ -256,6 +256,8 @@ export const danceJamArtists: Artist[] = [
     role: "Performances",
     bio: "",
     links: [
+      { label: "Mill Advised on Instagram", url: "https://www.instagram.com/milladvised/" },
+      { label: "GEN Crew on Instagram", url: "https://www.instagram.com/gencrewofficial/" },
       { label: "Synergy on Instagram", url: "https://www.instagram.com/synstagrammm/" },
       { label: "The Anomalies on Instagram", url: "https://www.instagram.com/wearetheanomalies_/" },
     ],
