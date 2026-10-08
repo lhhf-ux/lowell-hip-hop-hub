@@ -1,6 +1,7 @@
 # Lowell Hip-Hop Festival Site Roadmap
 
 ## Open
+- [ ] Put Egypt first at standard artist size and add verified links across the full lineup
 - [ ] Await real contact email and volunteer URL to replace placeholders
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
 
