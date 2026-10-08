@@ -54,6 +54,7 @@ export default defineConfig({
         buildApp: {
           order: "post",
           async handler(environment) {
+            console.log("[shim] buildApp env:", environment.name);
             if (environment.name !== "nitro") return;
             const { mkdir, readFile, writeFile } = await import("node:fs/promises");
             const { join, resolve } = await import("node:path");
