@@ -5,6 +5,7 @@
 - [ ] Push the site live: Cloudflare deploy cannot be run from here, so the user either publishes on Lovable or uploads dist/client to Cloudflare Pages themselves
 
 ## Done
+- [x] Renamed the Oct 17 workshop to "Urban Inspirational Metaphysics: Hip-Hop 101"
 - [x] Replaced the placeholder contact email with lowellhiphopfestival@gmail.com
 - [x] Added the Waves of Migration mural unveiling to the Schedule page
 - [x] Added and verified Refuge Art School partner unveiling and food truck Instagram links for October 10 and 18
