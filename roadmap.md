@@ -1,7 +1,7 @@
 # Lowell Hip-Hop Festival Site Roadmap
 
 ## Open
-- [ ] Verify judges’ Instagram accounts; request handles where identities cannot be confirmed
+- [ ] Add confirmed judge Instagram handles; leave Lady Ice unlinked
 - [ ] Await real contact email and volunteer URL to replace placeholders
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
 
