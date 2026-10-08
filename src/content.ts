@@ -179,6 +179,7 @@ export {
   featuredArtists,
   headliners,
   kickoffDJs,
+  oct15Artists,
   oct17Artists,
   supportArtists,
 } from "./artists";

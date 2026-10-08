@@ -7,6 +7,7 @@ import {
   featuredArtists,
   headliners,
   kickoffDJs,
+  oct15Artists,
   oct17Artists,
   spotifyPlaylistUrl,
   supportArtists,
@@ -24,6 +25,8 @@ export const Route = createFileRoute("/lineup")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: LineupPage,
@@ -124,6 +127,18 @@ function LineupPage() {
           <p className="mt-2 text-concrete">Kick-off Concert · Saturday, October 10 · Taffeta Music Hall</p>
           <div className="mt-8 grid gap-px bg-border sm:grid-cols-2">
             {kickoffDJs.map((artist) => (
+              <ArtistTile key={artist.id} {...artist} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t-2 border-border bg-vinyl">
+        <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
+          <p className="eyebrow text-gold">Thursday, October 15 · 8:00 PM · Warp & Weft</p>
+          <h2 className="mt-3 text-3xl text-offwhite sm:text-4xl">DJ Myth</h2>
+          <div className="mt-8 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+            {oct15Artists.map((artist) => (
               <ArtistTile key={artist.id} {...artist} />
             ))}
           </div>
