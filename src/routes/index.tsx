@@ -206,18 +206,20 @@ function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`Lowell Hip-Hop Festival on Instagram, ${socialLinks.instagram.handle}`}
-              className="label-type flex min-h-14 w-full items-center justify-center border-2 border-offwhite px-6 text-lg text-offwhite transition-colors hover:border-gold hover:bg-gold hover:text-vinyl sm:w-auto sm:text-xl"
+              className="label-type flex min-h-14 w-full items-center justify-center gap-3 border-2 border-offwhite px-6 text-lg text-offwhite transition-colors hover:border-gold hover:bg-gold hover:text-vinyl sm:w-auto sm:text-xl"
             >
-              {socialLinks.instagram.handle}
+              <span>{socialLinks.instagram.label}</span>
+              <span className="text-base opacity-80 sm:text-lg">{socialLinks.instagram.handle}</span>
             </a>
             <a
               href={socialLinks.facebook.url}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`Lowell Hip-Hop Festival on Facebook, ${socialLinks.facebook.handle}`}
-              className="label-type flex min-h-14 w-full items-center justify-center border-2 border-offwhite px-6 text-lg text-offwhite transition-colors hover:border-gold hover:bg-gold hover:text-vinyl sm:w-auto sm:text-xl"
+              className="label-type flex min-h-14 w-full items-center justify-center gap-3 border-2 border-offwhite px-6 text-lg text-offwhite transition-colors hover:border-gold hover:bg-gold hover:text-vinyl sm:w-auto sm:text-xl"
             >
-              {socialLinks.facebook.handle}
+              <span>{socialLinks.facebook.label}</span>
+              <span className="text-base opacity-80 sm:text-lg">{socialLinks.facebook.handle}</span>
             </a>
           </div>
         </div>
