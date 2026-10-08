@@ -30,7 +30,35 @@ The role label is the small gold uppercase line above each name.
 
 ## Blurbs
 
-Names only. None of the four new acts get a bio, so nothing is invented. Every bio already on the page stays untouched.
+Researched draft bios below are for approval only. Every existing bio stays untouched, including Poppy Pyonn's when she moves sections.
+
+### Egypt — MC / Rapper
+
+Egypt is a Lowell rapper, also known as Egypt Raps, who has been performing in the city and beyond for about a decade. Her work extends beyond music into volunteer work and speaking at local high schools. In 2026, with support from a Mosaic Lowell grant, she published *From Nothing to Everything*, a book drawing on her own experiences to help readers rise above their circumstances. An August feature in the Lowell Sun highlighted her music, growing online audience, and work with young people.
+
+Sources: [Lowell Sun feature](https://www.lowellsun.com/2026/08/23/rapping-out-a-lowell-beat/); [accessible syndicated article text](https://hcntimes.com/rapping-out-a-lowell-beat/). Her [YouTube channel](https://www.youtube.com/channel/UCY9SRjh0AiEOCyZrE_wq-Ag) was supplied by you.
+
+### TDI Muzik — Special Guest
+
+TDI Muzik comes to Lowell from New York with a direct connection to Jungle Brothers. He appears on “Make the Party Rock” from their 2026 *Concrete Jungle* EP and joined them at Bastid's BBQ at New York's Seaport this August. For the Kick-off Concert, he joins the Featured Artists bill as a Special Guest.
+
+Sources: [EP review confirming the track credit](https://undergroundhiphopblog.com/albums/the-jungle-brothers-return-for-a-trip-through-the-concrete-jungle-ep-review/); [official event listing showing Jungle Brothers featuring TDI Muzik](https://dice.fm/event/yoek7r-bastids-bbq-new-york-26-8th-aug-the-seaport-new-york-city-tickets); [Seaport lineup spelling](https://theseaport.nyc/events/bastids-bbq/).
+
+Name check: use **TDI Muzik**, matching public event listings. Some music credits use **TdiMuzik**. No claim about a popular solo song: the research did not establish chart success or a breakout hit.
+
+### Elmstreet — DJ & Host
+
+Elmstreet joins the Kick-off Concert as a DJ and host, then returns to host the Dance Jam Finale on October 18. His local appearances include an Open Streets Lowell lineup alongside Malissa Lach and CabbHoppa1, presented by the Lowell Hip-Hop Festival.
+
+Source: [Open Streets Lowell performance listing](https://www.openstreetslowell.org/things-to-do/). Festival roles and dates are confirmed by you and the current schedule. His wider career history was not sufficiently documented to add more claims.
+
+### DJ KingX — DJ & B-boy
+
+DJ KingX is a DJ and b-boy representing Lawtown Assassins. His *Born 2 Get Down* mixtape brings together b-boy breaks with a boom-bap lean. He joins the Kick-off Concert behind the decks and returns as the breaking DJ for the Dance Jam Finale on October 18.
+
+Sources: [artist's SoundCloud mixtape](https://soundcloud.com/djkingxassasins/born-2-get-down-mixtape); [mixtape coverage](https://hamza21.com/2026/06/08/mix-mondays-born-2-get-down/). Crew affiliation and festival roles are confirmed by you. No unsupported production or judging claims are included.
+
+Source notes remain in this draft; the artist bios themselves will appear on the site. Egypt gets the longest bio and the strongest placement of the new additions.
 
 ## Marketing Egypt hardest
 
@@ -43,14 +71,12 @@ Say the word and I'll drop the links, the wide tile, or both.
 
 ## Technical notes
 
-- `src/artists.ts` — add a `featuredArtists` array (Poppy Pyonn, TDI Muzik) and a `kickoffDJs` array (Elmstreet, DJ KingX); remove Poppy Pyonn from `supportArtists`; add Egypt as the first entry of `supportArtists`. New acts get blank bios.
+- `src/artists.ts` — add a `featuredArtists` array (Poppy Pyonn, TDI Muzik) and a `kickoffDJs` array (Elmstreet, DJ KingX); remove Poppy Pyonn from `supportArtists`; add Egypt as the first entry of `supportArtists`. New acts get the approved bios above.
 - `src/content.ts` — re-export the two new arrays alongside the existing ones.
 - `src/routes/lineup.tsx` — two new sections built from the same tile component, plus a wider Egypt tile with the two external links.
-- Both Egypt URLs get checked that they resolve before they're linked.
+- Egypt's YouTube and Lowell Sun links use the exact URLs you supplied. The article text is available through search and syndication; direct automated requests may be blocked, so reader access may depend on the publisher.
 - Elmstreet and DJ KingX keep their existing Dance Jam entries, so they appear on two nights.
 
-## Needs your call
+## Approval
 
-- TDI Muzik spelling: "TDIMuzik" or "TDI Muzik"? And is "Special Guest" the right label?
-- Should "Lawtown Assassins" appear on DJ KingX's tile?
-- TDI Muzik comes from NY rather than the 978 — Featured Artists is where I've put him. Confirm, or move him to Local Artists.
+Approve or edit the four draft bios and Egypt's prominent placement before any lineup changes are applied. TDI Muzik uses the confirmed Special Guest label and sits in Featured Artists with Poppy Pyonn, as requested. Lawtown Assassins appears in DJ KingX's bio. No site content has been changed yet.
