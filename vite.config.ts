@@ -77,12 +77,15 @@ export default defineConfig({
       serverDir: "dist/server",
       publicDir: "dist/client",
     },
-    hooks: {
-      // Runs after Nitro has written dist/server/index.mjs.
-      compiled: async () => {
-        await renderStaticPages();
+    // Nitro's own options include `hooks`; the wrapper's narrow nitro type doesn't.
+    ...({
+      hooks: {
+        // Runs after Nitro has written dist/server/index.mjs.
+        compiled: async () => {
+          await renderStaticPages();
+        },
       },
-    },
+    } as Record<string, unknown>),
     cloudflare: { nodeCompat: true },
   },
   tanstackStart: {
