@@ -1,11 +1,11 @@
 # Lowell Hip-Hop Festival Site Roadmap
 
 ## Open
-- [ ] Verify judges’ Instagram accounts; request handles where identities cannot be confirmed
 - [ ] Await real contact email and volunteer URL to replace placeholders
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
 
 ## Done
+- [x] Added confirmed Instagram handles for Baldi, RTA, Grinz, McKersin and D.O.A.; left Lady Ice unlinked
 - [x] Updated supplied artist profiles, Elmstreet bio and article, DJ Myth and dance performers in the preview
 - [x] Put Egypt first at standard artist size and add verified links across the full lineup
 - [x] Renamed Dance Jam Finale to Mill City Get Down throughout the site
