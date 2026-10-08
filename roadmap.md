@@ -1,6 +1,7 @@
 # Lowell Hip-Hop Festival Site Roadmap
 
 ## Open
+- [ ] Verify Strictly Cyphers 3 and revise DJ KingX's draft bio to emphasize his break tapes
 - [ ] Rename Dance Jam Finale to Mill City Get Down throughout the site, preserving lowercase i's in all-caps styling
 - [ ] Await approval of researched Egypt, Elmstreet, DJ KingX and TDI Muzik bios and Lineup page reorganization
 - [ ] Await real contact email and volunteer URL to replace placeholders
