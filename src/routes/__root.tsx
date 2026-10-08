@@ -7,6 +7,7 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
+import type { ErrorComponentProps } from "@tanstack/router-core";
 import { lazy, useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
@@ -34,11 +35,12 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
+    const reportedError = error instanceof Error ? error : new Error(String(error));
+    reportLovableError(reportedError, { boundary: "tanstack_root_error_component" });
   }, [error]);
 
   return (
