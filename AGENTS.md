@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep artist biography data and lineup groupings in `src/artists.ts` so editorial updates remain centralized and route components only render them.

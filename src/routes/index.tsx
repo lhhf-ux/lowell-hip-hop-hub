@@ -20,7 +20,7 @@ import { formatShortDate, getPublicEvents, isUpcoming } from "@/lib/events";
 
 const title = "Lowell Hip-Hop Festival — October 10–18, 2026";
 const description =
-  "A week of hip-hop in Lowell, MA. Jungle Brothers and Termanology headline the Kick-off Concert, plus workshops, DJ nights, trivia, and the Dance Jam Finale.";
+  "A week of hip-hop in Lowell, MA. Jungle Brothers and Termanology headline the Kick-off Concert, plus workshops, DJ nights, trivia, and Mill City Get Down.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

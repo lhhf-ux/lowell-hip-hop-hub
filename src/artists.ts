@@ -3,6 +3,7 @@ export type Artist = {
   name: string;
   role: string;
   bio: string;
+  links?: Array<{ label: string; url: string }>;
 };
 
 export const headliners: Artist[] = [
@@ -22,16 +23,26 @@ export const headliners: Artist[] = [
 
 export const supportArtists: Artist[] = [
   {
+    id: "egypt",
+    name: "Egypt",
+    role: "MC / Rapper",
+    bio: "Egypt is a Lowell rapper, also known as Egypt Raps, who has been performing in the city and beyond for about a decade. Her work extends beyond music into volunteer work and speaking at local high schools. In 2026, with support from a Mosaic Lowell grant, she published From Nothing to Everything, a book drawing on her own experiences to help readers rise above their circumstances. An August feature in the Lowell Sun highlighted her music, growing online audience, and work with young people.",
+    links: [
+      {
+        label: "Watch on YouTube",
+        url: "https://www.youtube.com/channel/UCY9SRjh0AiEOCyZrE_wq-Ag",
+      },
+      {
+        label: "Read the Lowell Sun feature",
+        url: "https://www.lowellsun.com/2026/08/23/rapping-out-a-lowell-beat/",
+      },
+    ],
+  },
+  {
     id: "mill-city-madness",
     name: "Mill City Madness",
     role: "Collective",
     bio: "A Lowell scream-rap and scenecore collective built around the voices of Stardust World, Rottenegg, and Hazel Adeline. Their queer-friendly, defiant live shows and monthly themed events have made them a fixture of the Greater Lowell and Boston rap and rave scenes — proof the culture is still growing new branches in this city.",
-  },
-  {
-    id: "poppy-pyonn",
-    name: "Poppy Pyonn",
-    role: "MC",
-    bio: "A Burmese rapper and Berklee student with close to 200,000 followers on TikTok, releasing singles steadily since 2020 and rhyming in the city that has been a landing place for Southeast Asian families for forty years. Lowell already knows that blend on the mic. Poppy is what it sounds like now.",
   },
   {
     id: "malissa-lach",
@@ -68,6 +79,36 @@ export const supportArtists: Artist[] = [
     name: "Ape the Grim",
     role: "MC",
     bio: "A New Hampshire b-boy, graffiti writer, battler and MC with records featuring Kool Keith, Mr. Lif, Reks, Termanology, and many more. He is a one-man argument for the four-element framing this festival is built on.",
+  },
+];
+
+export const featuredArtists: Artist[] = [
+  {
+    id: "poppy-pyonn",
+    name: "Poppy Pyonn",
+    role: "MC",
+    bio: "A Burmese rapper and Berklee student with close to 200,000 followers on TikTok, releasing singles steadily since 2020 and rhyming in the city that has been a landing place for Southeast Asian families for forty years. Lowell already knows that blend on the mic. Poppy is what it sounds like now.",
+  },
+  {
+    id: "tdi-muzik",
+    name: "TDI Muzik",
+    role: "Special Guest",
+    bio: "TDI Muzik comes to Lowell from New York with a direct connection to Jungle Brothers. He appears on “Make the Party Rock” from their 2026 Concrete Jungle EP and joined them at Bastid's BBQ at New York's Seaport this August. For the Kick-off Concert, he joins the Featured Artists bill as a Special Guest.",
+  },
+];
+
+export const kickoffDJs: Artist[] = [
+  {
+    id: "elmstreet-kickoff",
+    name: "Elmstreet",
+    role: "DJ & Host",
+    bio: "Elmstreet joins the Kick-off Concert as a DJ and host, then returns to host Mill City Get Down on October 18. His local appearances include an Open Streets Lowell lineup alongside Malissa Lach and CabbHoppa1, presented by the Lowell Hip-Hop Festival.",
+  },
+  {
+    id: "dj-kingx-kickoff",
+    name: "DJ KingX",
+    role: "DJ & B-boy",
+    bio: "DJ KingX is a DJ and b-boy representing Lawtown Assassins. His break tapes are made for the cypher, including the latest installment, Strictly Cyphers 3, released in May 2026. He joins the Kick-off Concert behind the decks and returns as the breaking DJ for Mill City Get Down on October 18.",
   },
 ];
 
