@@ -18,15 +18,6 @@ export default defineConfig({
       serverDir: "dist/server",
       publicDir: "dist/client",
     },
-    // TanStack's preview-server plugin (used by the prerender step) imports
-    // `<serverOutDir>/server.js`, named after `tanstackStart.server.entry`.
-    // Nitro's default entry name is `index.mjs`, so the import failed and
-    // every route except "/" fell back to SSR instead of static HTML.
-    rollupConfig: {
-      output: {
-        entryFileNames: "server.js",
-      },
-    },
     cloudflare: { nodeCompat: true },
   },
   tanstackStart: {
