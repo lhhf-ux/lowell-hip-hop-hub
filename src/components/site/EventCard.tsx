@@ -1,4 +1,4 @@
-import type { FestEvent } from "@/content";
+import { foodTrucks, type FestEvent } from "@/content";
 import { formatLongDate, googleMapsUrl } from "@/lib/events";
 import { ExternalButton } from "./Button";
 
@@ -9,6 +9,7 @@ export function EventCard({ event }: { event: FestEvent }) {
   return (
     <article id={event.id} className={`scroll-mt-24 border-2 border-border border-l-8 ${accent} bg-cardgray p-5 sm:p-7`}>
       <p className={`eyebrow ${tone}`}>
+        {event.category === "partner" ? "Partner Event · " : ""}
         {formatLongDate(event.date)} · {event.time}
       </p>
       <h3 className="mt-3 text-2xl text-offwhite sm:text-3xl">{event.title}</h3>
@@ -23,9 +24,25 @@ export function EventCard({ event }: { event: FestEvent }) {
         </a>
       </p>
       <p className="mt-4 max-w-2xl text-concrete">{event.description}</p>
+      {event.foodTrucks ? (
+        <div className="mt-6">
+          <p className="eyebrow text-gold">Food Trucks</p>
+          <div className="mt-3 flex flex-wrap gap-3">
+            {foodTrucks.map((truck) => (
+              <ExternalButton key={truck.name} href={truck.instagram} variant="outline">
+                {truck.name} · Instagram
+              </ExternalButton>
+            ))}
+          </div>
+        </div>
+      ) : null}
       {event.ticketUrl ? (
         <div className="mt-6">
           <ExternalButton href={event.ticketUrl}>Get Tickets</ExternalButton>
+        </div>
+      ) : event.eventUrl ? (
+        <div className="mt-6">
+          <ExternalButton href={event.eventUrl} variant="outline">Facebook Event</ExternalButton>
         </div>
       ) : (
         <p className="label-type mt-6 text-xs text-concrete">Free · No ticket required</p>

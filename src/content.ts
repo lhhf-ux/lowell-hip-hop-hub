@@ -1,4 +1,4 @@
-export type EventCategory = "festival" | "community" | "internal";
+export type EventCategory = "festival" | "community" | "partner" | "internal";
 
 export type FestEvent = {
   id: string;
@@ -12,6 +12,8 @@ export type FestEvent = {
   mapQuery?: string;
   description: string;
   ticketUrl?: string;
+  eventUrl?: string;
+  foodTrucks?: boolean;
   category: EventCategory;
 };
 
@@ -72,7 +74,23 @@ export const aboutStory = [
   "Everything we do is community-first. Workshops are open to beginners. Battles are open to anybody with heart. Our year-round presence at neighborhood events keeps the festival tied to the city rather than dropping in for one weekend and disappearing.",
 ];
 
+export const foodTrucks = [
+  { name: "El Flow Food Traila", instagram: "https://www.instagram.com/chef_shephard_llc/" },
+  { name: "Brewd Awakening", instagram: "https://www.instagram.com/brewdawakeningcoffeehaus/" },
+];
+
 export const events: FestEvent[] = [
+  {
+    id: "waves-of-migration",
+    date: "2026-10-10",
+    time: "5:00 – 8:00 PM",
+    title: "Waves of Migration Mural Unveiling",
+    venue: "Western Avenue Studios",
+    mapQuery: "Western Avenue Studios, 122 Western Ave, Lowell, MA",
+    description: "Refuge Art School's Waves of Migration mural unveiling, with an open mic hosted by CabbHoppa1.",
+    eventUrl: "https://www.facebook.com/events/4540891739487950/",
+    category: "partner",
+  },
   {
     id: "kickoff-concert",
     date: "2026-10-10",
@@ -83,6 +101,7 @@ export const events: FestEvent[] = [
     description:
       "The festival opens with Jungle Brothers and Termanology, backed by a deep bill of Lowell and 978 artists, with breaking and dance cypher interludes throughout the night — plenty of chances for you to get loose on the dance floor. All ages welcome with a parent or guardian; 18+ unaccompanied.",
     ticketUrl,
+    foodTrucks: true,
     category: "festival",
   },
   {
@@ -148,6 +167,7 @@ export const events: FestEvent[] = [
     mapQuery: "Tescobar Performance Center, 72 Middlesex St, Lowell, MA",
     description:
       "Hip-hop dance battles, dance showcases, cyphers and circles to close the festival out.",
+    foodTrucks: true,
     category: "festival",
   },
   {

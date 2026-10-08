@@ -6,6 +6,7 @@
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
 
 ## Done
+- [x] Added and verified Refuge Art School partner unveiling and food truck Instagram links for October 10 and 18
 - [x] Added DJ Myth's logo and Fee & The Evolutionists' band photo beside their Lineup boxes
 - [x] Prerendered all nine pages to static HTML so the Cloudflare Pages build completes
 - [x] Added DJ Trends' Instagram and noted DJ Myth often performs with Fee & The Evolutionists

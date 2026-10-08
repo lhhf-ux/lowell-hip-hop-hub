@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { EventCard } from "@/components/site/EventCard";
 import { PageHeader, SiteLayout } from "@/components/site/Layout";
-import { getFestivalEvents } from "@/lib/events";
+import { getPublicEvents } from "@/lib/events";
 
 const title = "Festival Schedule — Lowell Hip-Hop Festival 2026";
 const description =
@@ -23,7 +23,7 @@ export const Route = createFileRoute("/schedule")({
 });
 
 function SchedulePage() {
-  const events = getFestivalEvents();
+  const events = getPublicEvents().filter((event) => event.category === "festival" || event.category === "partner");
 
   return (
     <SiteLayout>
