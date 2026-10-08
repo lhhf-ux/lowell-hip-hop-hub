@@ -5,6 +5,7 @@
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
 
 ## Done
+- [x] Added a researched DJ Myth bio and Concord Monitor feature
 - [x] Added confirmed Instagram handles for Baldi, RTA, Grinz, McKersin and D.O.A.; left Lady Ice unlinked
 - [x] Updated supplied artist profiles, Elmstreet bio and article, DJ Myth and dance performers in the preview
 - [x] Put Egypt first at standard artist size and add verified links across the full lineup
