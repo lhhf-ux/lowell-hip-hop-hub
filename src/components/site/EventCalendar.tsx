@@ -122,7 +122,7 @@ export function EventCalendar({
             const key = iso(cursor.year, cursor.month, day);
             const dayEvents = byDate.get(key) ?? [];
             const festival = dayEvents.some((e) => e.category === "festival");
-            const community = dayEvents.some((e) => e.category === "community");
+            const community = dayEvents.some((e) => e.category === "community" || e.category === "partner");
             const marked = dayEvents.length > 0;
             const tone = festival ? "bg-gold text-vinyl" : community ? "bg-beat text-offwhite" : "bg-vinyl";
 
@@ -133,7 +133,7 @@ export function EventCalendar({
                   {dayEvents.map((event) => (
                     <li key={event.id}>
                       <Link
-                        to="/schedule"
+                        to={event.category === "community" ? "/events" : "/schedule"}
                         hash={event.id}
                         className="block text-xs leading-snug font-medium underline decoration-2 underline-offset-2"
                       >
@@ -156,7 +156,7 @@ export function EventCalendar({
           <ul>
             {monthEvents.map((event) => (
               <li key={event.id} className="border-b border-border last:border-b-0">
-                <Link to="/schedule" hash={event.id} className="block px-4 py-4">
+                <Link to={event.category === "community" ? "/events" : "/schedule"} hash={event.id} className="block px-4 py-4">
                   <span
                     className={`eyebrow ${event.category === "festival" ? "text-gold" : "text-beat"}`}
                   >
@@ -178,7 +178,7 @@ export function EventCalendar({
         </span>
         <span className="flex items-center gap-2">
           <span className="inline-block h-4 w-4 bg-beat" aria-hidden="true" />
-          <span className="eyebrow text-concrete">Community</span>
+           <span className="eyebrow text-concrete">Community / Partner</span>
         </span>
       </div>
     </div>

@@ -2,11 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { EventCard } from "@/components/site/EventCard";
 import { PageHeader, SiteLayout } from "@/components/site/Layout";
-import { getCommunityEvents, getFestivalEvents } from "@/lib/events";
+import { getCommunityEvents, getFestivalEvents, getPublicEvents } from "@/lib/events";
 
 const title = "Events — Lowell Hip-Hop Festival";
 const description =
-  "All Lowell Hip-Hop Festival events: festival week October 10–18, 2026 plus community appearances at the Lowell Kinetic Sculpture Race and Open Streets Lowell.";
+  "Lowell Hip-Hop Festival week October 10–18, 2026, partner events including Refuge Art School's Waves of Migration mural unveiling, and year-round community appearances.";
 
 export const Route = createFileRoute("/events")({
   head: () => ({
@@ -25,6 +25,7 @@ export const Route = createFileRoute("/events")({
 function EventsPage() {
   const festival = getFestivalEvents();
   const community = getCommunityEvents();
+  const partners = getPublicEvents().filter((event) => event.category === "partner");
 
   return (
     <SiteLayout>
@@ -41,6 +42,15 @@ function EventsPage() {
           {community.map((event) => (
             <EventCard key={event.id} event={event} />
           ))}
+        </div>
+      </section>
+
+      <section className="border-t-2 border-border">
+        <div className="mx-auto max-w-4xl px-4 py-14 sm:py-20">
+          <h2 className="text-3xl text-offwhite sm:text-4xl">Partner Events</h2>
+          <div className="mt-8 space-y-px bg-border">
+            {partners.map((event) => <EventCard key={event.id} event={event} />)}
+          </div>
         </div>
       </section>
 
