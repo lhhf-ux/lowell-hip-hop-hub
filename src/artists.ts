@@ -78,7 +78,7 @@ export const supportArtists: Artist[] = [
     id: "cabbhoppa1",
     name: "CabbHoppa1",
     role: "MC",
-    bio: "A muralist and hip-hop culture advocate who works from a deep knowledge of where the culture came from, connecting art to the communities it lives in. He's also leading Hip-Hop 101 at The Hive on the 17th.",
+    bio: "A muralist and hip-hop culture advocate who works from a deep knowledge of where the culture came from, connecting art to the communities it lives in. He's also leading Urban Inspirational Metaphysics: Hip-Hop 101 at The Hive on the 17th.",
     links: [
       { label: "Instagram", url: "https://www.instagram.com/cabbhoppa/" },
     ],

@@ -7,7 +7,7 @@ import { getPublicEvents } from "@/lib/events";
 
 const title = "Festival Schedule — Lowell Hip-Hop Festival 2026";
 const description =
-  "Every festival event from October 10 to 18, 2026: the Kick-off Concert, the Waves of Migration mural unveiling, dance workshop, hip-hop trivia, DJ Myth, Hip-Hop 101, Fee & the Evolutionists, and Mill City Get Down.";
+  "Every festival event from October 10 to 18, 2026: the Kick-off Concert, the Waves of Migration mural unveiling, dance workshop, hip-hop trivia, DJ Myth, Urban Inspirational Metaphysics: Hip-Hop 101, Fee & the Evolutionists, and Mill City Get Down.";
 
 export const Route = createFileRoute("/schedule")({
   head: () => ({

@@ -141,11 +141,11 @@ export const events: FestEvent[] = [
     id: "hip-hop-101",
     date: "2026-10-17",
     time: "12:00 PM",
-    title: "Hip-Hop 101 and Graffiti Lettering Workshop",
+    title: "Urban Inspirational Metaphysics: Hip-Hop 101 and Graffiti Lettering Workshop",
     venue: "The Hive Public Market",
     mapQuery: "The Hive Public Market, 101 Paige St, Lowell, MA",
     description:
-      "Hip-Hop 101 is led by CabbHoppa1 — the history of the culture and its four elements — followed by a hands-on graffiti lettering session led by Xavier Robbins. All ages welcome. Limited to 20 participants.",
+      "Urban Inspirational Metaphysics: Hip-Hop 101 is led by CabbHoppa1 — the history of the culture and its four elements — followed by a hands-on graffiti lettering session led by Xavier Robbins. All ages welcome. Limited to 20 participants.",
     category: "festival",
   },
   {
