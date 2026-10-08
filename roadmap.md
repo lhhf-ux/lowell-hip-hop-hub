@@ -1,6 +1,7 @@
 # Lowell Hip-Hop Festival Site Roadmap
 
 ## Open
+- [ ] Add Refuge Art School partner unveiling and food trucks for October 10 and 18
 - [ ] Await real contact email and volunteer URL to replace placeholders
 - [ ] Await real contact email and volunteer URL to replace placeholders
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
