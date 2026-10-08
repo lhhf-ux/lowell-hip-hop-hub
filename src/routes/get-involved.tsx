@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { ExternalButton } from "@/components/site/Button";
 import { PageHeader, SiteLayout } from "@/components/site/Layout";
-import { donateUrl, socialLinks, volunteerRoles, volunteerUrl } from "@/content";
+import { contactEmail, donateUrl, socialLinks, volunteerRoles, volunteerUrl } from "@/content";
 
 const title = "Get Involved — Lowell Hip-Hop Festival";
 const description =

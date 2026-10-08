@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { ExternalButton } from "@/components/site/Button";
 import { PageHeader, SiteLayout } from "@/components/site/Layout";
-import { currentSponsors, donateUrl, fiscalSponsorshipLine, sponsorTiers } from "@/content";
+import { contactEmail, currentSponsors, donateUrl, fiscalSponsorshipLine, sponsorTiers } from "@/content";
 
 const title = "Sponsors — Lowell Hip-Hop Festival";
 const description =
