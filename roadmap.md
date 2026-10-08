@@ -2,6 +2,7 @@
 
 ## Open
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
+- [ ] Push the site live: Cloudflare deploy cannot be run from here, so the user either publishes on Lovable or uploads dist/client to Cloudflare Pages themselves
 
 ## Done
 - [x] Replaced the placeholder contact email with lowellhiphopfestival@gmail.com
