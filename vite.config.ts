@@ -39,18 +39,53 @@ export default defineConfig({
     ],
     prerender: { enabled: true, autoStaticPathsDiscovery: false },
   },
-  // The build wrapper writes its prerender preview shim to
-  // `<environments.ssr.build.outDir>/server.js`, but Nitro points that
-  // environment at node_modules/.nitro/vite/services/ssr, while TanStack's
-  // preview server imports `dist/server/server.js`. Pinning the SSR outDir to
-  // Nitro's server dir puts the shim where the preview server looks for it.
+  // Nitro emits its server entry as dist/server/index.mjs, but TanStack's
+  // preview server (which drives prerendering) imports dist/server/server.js.
+  // The build wrapper writes that shim into the SSR environment's outDir, and
+  // Nitro points that environment at node_modules/.nitro/vite/services/ssr, so
+  // the import fails and every route except "/" falls back to SSR instead of
+  // static HTML. Write the shim where the preview server looks for it, once
+  // Nitro has emitted its entry.
   vite: {
-    environments: {
-      ssr: {
-        build: {
-          outDir: "dist/server",
+    plugins: [
+      {
+        name: "lhhf-prerender-preview-shim",
+        apply: "build",
+        buildApp: {
+          order: "post",
+          async handler(environment) {
+            if (environment.name !== "nitro") return;
+            const { mkdir, readFile, writeFile } = await import("node:fs/promises");
+            const { join, resolve } = await import("node:path");
+            const serverDir = resolve(process.cwd(), "dist/server");
+            let vars = {};
+            try {
+              const raw = JSON.parse(await readFile(join(serverDir, "wrangler.json"), "utf8"));
+              if (raw?.vars && typeof raw.vars === "object") vars = raw.vars;
+            } catch {
+              // no wrangler config: prerender with an empty env
+            }
+            await mkdir(serverDir, { recursive: true });
+            await writeFile(
+              join(serverDir, "server.js"),
+              `// Prerender preview shim: runs Nitro's module worker under Node.
+import server from "./index.mjs";
+const env = ${JSON.stringify(vars)};
+const ctx = { waitUntil() {}, passThroughOnException() {}, props: {} };
+export default {
+  fetch(request) {
+    // srvx's NodeRequest exposes \`ip\` as a getter-only accessor and nitro's
+    // cloudflare module handler assigns to it; shadow it with a writable one.
+    Object.defineProperty(request, "ip", { value: undefined, writable: true, configurable: true });
+    return server.fetch(request, env, ctx);
+  },
+};
+`,
+              "utf8",
+            );
+          },
         },
       },
-    },
+    ],
   },
 });
