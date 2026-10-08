@@ -104,8 +104,8 @@ function HomePage() {
           <div className="mt-8 grid gap-8 lg:grid-cols-[1fr_1.1fr]">
             <a href={ticketUrl} target="_blank" rel="noopener noreferrer" className="block">
               <img
-                src="/images/kickoff-flyer.webp"
-                alt="Kick-off Concert flyer: Jungle Brothers and Termanology, Saturday October 10 at 6pm, Taffeta Music Hall, 110 Western Ave, Lowell MA"
+                src="/images/kickoff-flyer-v2.webp"
+                alt="Kick-off Concert flyer: Jungle Brothers and Termanology, just added Egypt, Elmstreet and DJ KingX, Saturday October 10 at 6pm, Taffeta Music Hall, 110 Western Ave, Lowell MA"
                 className="w-full border-2 border-border"
                 loading="lazy"
               />
