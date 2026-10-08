@@ -1,6 +1,7 @@
 # Lowell Hip-Hop Festival Site Roadmap
 
 ## Open
+- [ ] Update supplied artist profiles, Elmstreet bio, DJ Myth and dance performers; verify judges’ Instagram accounts
 - [ ] Await real contact email and volunteer URL to replace placeholders
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
 
