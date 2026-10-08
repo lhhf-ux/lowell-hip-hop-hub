@@ -29,15 +29,23 @@ async function writePrerenderShim() {
   await writeFile(
     join(SERVER_DIR, "server.js"),
     `// Prerender preview shim: runs Nitro's module worker under Node.
+import { appendFileSync } from "node:fs";
 import server from "./index.mjs";
 const env = ${JSON.stringify(vars)};
 const ctx = { waitUntil() {}, passThroughOnException() {}, props: {} };
 export default {
-  fetch(request) {
+  async fetch(request) {
     // srvx's NodeRequest exposes \`ip\` as a getter-only accessor and nitro's
     // cloudflare module handler assigns to it; shadow it with a writable one.
     Object.defineProperty(request, "ip", { value: undefined, writable: true, configurable: true });
-    return server.fetch(request, env, ctx);
+    try {
+      const res = await server.fetch(request, env, ctx);
+      appendFileSync("/tmp/shim.log", \`\${request.method} \${request.url} -> \${res.status} \${res.headers.get("location") ?? ""}\\n\`);
+      return res;
+    } catch (err) {
+      appendFileSync("/tmp/shim.log", \`\${request.method} \${request.url} -> THREW \${err && err.stack ? err.stack : err}\\n\`);
+      throw err;
+    }
   },
 };
 `,
