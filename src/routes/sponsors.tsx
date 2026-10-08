@@ -112,7 +112,7 @@ function SponsorsPage() {
           <div className="mt-7 flex flex-wrap justify-center gap-3">
             <ExternalButton href={donateUrl}>Donate / Sponsor</ExternalButton>
             <a
-              href="mailto:info@lowellhiphopfestival.org"
+              href={`mailto:${contactEmail}`}
               className="label-type inline-flex min-h-11 items-center justify-center border-2 border-offwhite px-6 py-3 text-sm text-offwhite transition-colors hover:border-gold hover:bg-gold hover:text-vinyl"
             >
               Email the Team
