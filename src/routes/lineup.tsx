@@ -34,16 +34,14 @@ function ArtistTile({
   role,
   bio,
   links,
-  featured = false,
 }: {
   name: string;
   role: string;
   bio: string;
   links?: Array<{ label: string; url: string }>;
-  featured?: boolean;
 }) {
   return (
-    <article className={`border-2 border-border bg-cardgray p-5 sm:p-7 ${featured ? "sm:col-span-2 lg:col-span-4" : ""}`}>
+    <article className="border-2 border-border bg-cardgray p-5 sm:p-7">
       <p className="eyebrow text-gold">{role}</p>
       <h3 className="mt-3 text-2xl text-offwhite sm:text-3xl">{name}</h3>
       {bio ? <p className="mt-3 text-base leading-relaxed text-concrete">{bio}</p> : null}
@@ -88,7 +86,7 @@ function LineupPage() {
         <p className="mt-2 text-concrete">Kick-off Concert · Saturday, October 10 · Taffeta Music Hall</p>
         <div className="mt-8 grid gap-px bg-border sm:grid-cols-2">
           {headliners.map((artist) => (
-            <ArtistTile key={artist.id} name={artist.name} role={artist.role} bio={artist.bio} />
+            <ArtistTile key={artist.id} {...artist} />
           ))}
         </div>
         <div className="mt-8">
@@ -114,7 +112,7 @@ function LineupPage() {
           <p className="mt-2 text-concrete">Kick-off Concert · Saturday, October 10 · Taffeta Music Hall</p>
           <div className="mt-8 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-4">
             {supportArtists.map((artist) => (
-              <ArtistTile key={artist.id} {...artist} featured={artist.id === "egypt"} />
+              <ArtistTile key={artist.id} {...artist} />
             ))}
           </div>
         </div>
@@ -138,7 +136,7 @@ function LineupPage() {
           <h2 className="mt-3 text-3xl text-offwhite sm:text-4xl">Fee & The Evolutionists</h2>
           <div className="mt-8 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
             {oct17Artists.map((artist) => (
-              <ArtistTile key={artist.id} name={artist.name} role={artist.role} bio={artist.bio} />
+              <ArtistTile key={artist.id} {...artist} />
             ))}
           </div>
         </div>
@@ -150,7 +148,7 @@ function LineupPage() {
           <h2 className="mt-3 text-3xl text-offwhite sm:text-4xl">Mill City Get Down</h2>
           <div className="mt-8 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
             {danceJamArtists.map((artist) => (
-              <ArtistTile key={artist.id} name={artist.name} role={artist.role} bio={artist.bio} />
+              <ArtistTile key={artist.id} {...artist} />
             ))}
           </div>
         </div>
