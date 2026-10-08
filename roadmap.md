@@ -1,6 +1,7 @@
 # Lowell Hip-Hop Festival Site Roadmap
 
 ## Open
+- [ ] Research Egypt, Elmstreet, DJ KingX and TDI Muzik bios, verify TDI spelling, and present lineup draft for approval before site changes
 - [ ] Await real contact email and volunteer URL to replace placeholders
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
 
