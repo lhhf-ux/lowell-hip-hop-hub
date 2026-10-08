@@ -89,7 +89,7 @@ export const events: FestEvent[] = [
     mapQuery: "Western Avenue Studios, 122 Western Ave, Lowell, MA",
     description: "Refuge Art School's Waves of Migration mural unveiling, with an open mic hosted by CabbHoppa1.",
     eventUrl: "https://www.facebook.com/events/4540891739487950/",
-    category: "partner",
+    category: "community",
   },
   {
     id: "kickoff-concert",
@@ -110,7 +110,7 @@ export const events: FestEvent[] = [
     time: "4:00 – 6:00 PM",
     title: "Learn to Dance Workshop",
     venue: "GEN Studio",
-    mapQuery: "GEN Studio, Western Avenue Studios, 122 Western Ave, Lowell, MA",
+    mapQuery: "GEN Studio, Western Avenue Studios, 122 Western Ave #225, Lowell, MA",
     description:
       "An open-level introduction to breaking and hip-hop dance foundations, led by Justin. No experience needed — just wear sneakers.",
     category: "festival",
@@ -239,7 +239,7 @@ export const venues: Venue[] = [
   {
     id: "gen-studio",
     name: "GEN Studio",
-    address: "Western Avenue Studios, 122 Western Ave",
+    address: "Western Avenue Studios, 122 Western Ave #225",
     description: "A working dance studio inside the Western Ave arts complex, and the site of our dance workshop.",
   },
 ];
