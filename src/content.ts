@@ -112,7 +112,7 @@ export const events: FestEvent[] = [
     venue: "GEN Studio",
     mapQuery: "GEN Studio, Western Avenue Studios, 122 Western Ave #225, Lowell, MA",
     description:
-      "An open-level introduction to breaking and hip-hop dance foundations, led by Justin. No experience needed — just wear sneakers.",
+      "An open-level introduction to breaking and hip-hop dance foundations, led by Justin. No experience needed — just wear sneakers. Justin will be teaching a 45-second-long original choreography that will act as an intro to hip-hop and dancing! Be prepared to get hype and energetic as you learn what Justin has cooked up with MOTION by CORTIS ft. Juicy J.",
     category: "festival",
   },
   {
