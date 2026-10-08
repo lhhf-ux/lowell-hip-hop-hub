@@ -7,6 +7,7 @@
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
 
 ## Done
+- [x] Verified Strictly Cyphers 3 and revised DJ KingX's draft bio to emphasize his break tapes
 - [x] Static marketing site with nine pages
 - [x] Mission statement updated to user-supplied text
 - [x] Lineup page uses real artist bios

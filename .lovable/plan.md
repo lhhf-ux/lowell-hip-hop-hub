@@ -54,9 +54,9 @@ Source: [Open Streets Lowell performance listing](https://www.openstreetslowell.
 
 ### DJ KingX — DJ & B-boy
 
-DJ KingX is a DJ and b-boy representing Lawtown Assassins. His *Born 2 Get Down* mixtape brings together b-boy breaks with a boom-bap lean. He joins the Kick-off Concert behind the decks and returns as the breaking DJ for Mill City Get Down on October 18.
+DJ KingX is a DJ and b-boy representing Lawtown Assassins. His break tapes are made for the cypher, including the latest installment, *Strictly Cyphers 3*, released in May 2026. He joins the Kick-off Concert behind the decks and returns as the breaking DJ for Mill City Get Down on October 18.
 
-Sources: [artist's SoundCloud mixtape](https://soundcloud.com/djkingxassasins/born-2-get-down-mixtape); [mixtape coverage](https://hamza21.com/2026/06/08/mix-mondays-born-2-get-down/). Crew affiliation and festival roles are confirmed by you. No unsupported production or judging claims are included.
+Sources: [artist's Strictly Cyphers 3 release](https://soundcloud.com/djkingxassasins/strictly-cyphers-3); [coverage describing the break-focused Strictly Cyphers series](https://hamza21.com/2025/04/14/mix-mondays-strictly-cyphers-2/). SoundCloud lists *Strictly Cyphers 3* as released May 5, 2026. Crew affiliation and festival roles are confirmed by you. No unsupported popularity, production or judging claims are included.
 
 Source notes remain in this draft; the artist bios themselves will appear on the site. Egypt gets the longest bio and the strongest placement of the new additions.
 
