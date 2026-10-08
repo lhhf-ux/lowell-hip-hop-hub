@@ -68,23 +68,25 @@ function ArtistFeature({
   src,
   alt,
   fit = "cover",
+  panelClass = "bg-cardgray",
 }: {
   artist: Artist;
   src: string;
   alt: string;
   fit?: "cover" | "contain";
+  panelClass?: string;
 }) {
   return (
     <div className="grid gap-px bg-border sm:grid-cols-2">
-      <div className="flex items-center justify-center bg-cardgray p-6 sm:p-8">
+      <div className={`relative min-h-64 ${panelClass}`}>
         <img
           src={src}
           alt={alt}
           loading="lazy"
           className={
             fit === "cover"
-              ? "h-full max-h-96 w-full object-cover"
-              : "max-h-72 w-full object-contain"
+              ? "absolute inset-0 h-full w-full object-cover"
+              : "absolute inset-0 h-full w-full object-contain p-8 sm:p-12"
           }
         />
       </div>
@@ -177,6 +179,7 @@ function LineupPage() {
                 src="/images/dj-myth-logo.png"
                 alt="DJ Myth logo"
                 fit="contain"
+                panelClass="bg-offwhite"
               />
             ))}
           </div>
