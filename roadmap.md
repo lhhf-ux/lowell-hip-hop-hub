@@ -5,6 +5,7 @@
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
 
 ## Done
+- [x] Added DJ Trends' Instagram and noted DJ Myth often performs with Fee & The Evolutionists
 - [x] Added a researched DJ Myth bio and Concord Monitor feature
 - [x] Added confirmed Instagram handles for Baldi, RTA, Grinz, McKersin and D.O.A.; left Lady Ice unlinked
 - [x] Updated supplied artist profiles, Elmstreet bio and article, DJ Myth and dance performers in the preview
