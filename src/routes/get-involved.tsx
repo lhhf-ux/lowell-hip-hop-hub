@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import { ExternalButton } from "@/components/site/Button";
 import { PageHeader, SiteLayout } from "@/components/site/Layout";
-import { donateUrl, socialLinks, volunteerRoles, volunteerUrl } from "@/content";
+import { contactEmail, donateUrl, socialLinks, volunteerRoles, volunteerUrl } from "@/content";
 
 const title = "Get Involved — Lowell Hip-Hop Festival";
 const description =
@@ -69,7 +69,7 @@ function GetInvolvedPage() {
                 Message on Instagram
               </ExternalButton>
               <a
-                href="mailto:info@lowellhiphopfestival.org"
+                href={`mailto:${contactEmail}`}
                 className="label-type inline-flex min-h-11 items-center justify-center border-2 border-offwhite px-6 py-3 text-sm text-offwhite transition-colors hover:border-gold hover:bg-gold hover:text-vinyl"
               >
                 Email the Team

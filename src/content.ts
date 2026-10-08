@@ -26,6 +26,7 @@ export const festivalDates = {
 export const ticketUrl = "https://www.taffetamusic.com/shows/lowell-hip-hop-oct-10-10-oct";
 export const donateUrl = "https://glcf.fcsuite.com/erp/donate/list/event?event_date_id=4564";
 export const volunteerUrl = "https://forms.gle/gXccQ5yqazyJY31KA";
+export const contactEmail = "lowellhiphopfestival@gmail.com";
 export const spotifyPlaylistUrl =
   "https://open.spotify.com/playlist/6TzBksjGosfJgfdkgnBIKr?si=78d1ddf4a52d4553";
 
