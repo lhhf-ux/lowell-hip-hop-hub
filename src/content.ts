@@ -143,7 +143,7 @@ export const events: FestEvent[] = [
     id: "dance-jam-finale",
     date: "2026-10-18",
     time: "1:00 PM",
-    title: "Dance Jam Finale",
+    title: "Mill City Get Down",
     venue: "Tescobar Performance Center",
     mapQuery: "Tescobar Performance Center, 72 Middlesex St, Lowell, MA",
     description:
@@ -174,7 +174,14 @@ export const events: FestEvent[] = [
 ];
 
 export type { Artist } from "./artists";
-export { headliners, supportArtists, oct17Artists, danceJamArtists } from "./artists";
+export {
+  danceJamArtists,
+  featuredArtists,
+  headliners,
+  kickoffDJs,
+  oct17Artists,
+  supportArtists,
+} from "./artists";
 
 export type Venue = {
   id: string;
@@ -206,7 +213,7 @@ export const venues: Venue[] = [
     id: "tescobar",
     name: "Tescobar Performance Center",
     address: "72 Middlesex St",
-    description: "Home of the Dance Jam Finale — open floor, big sound, room for a circle.",
+    description: "Home of Mill City Get Down — open floor, big sound, room for a circle.",
   },
   {
     id: "gen-studio",
@@ -242,7 +249,7 @@ export const sponsorTiers: SponsorTier[] = [
     amount: "$5,000+",
     benefits: [
       "Logo on festival materials and website",
-      "Recognition at the Kick-off Concert and Dance Jam Finale",
+      "Recognition at the Kick-off Concert and Mill City Get Down",
       "Dedicated social media features",
       "Kick-off Concert tickets",
     ],
