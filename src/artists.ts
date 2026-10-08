@@ -182,8 +182,11 @@ export const oct15Artists: Artist[] = [
     id: "dj-myth",
     name: "DJ Myth",
     role: "DJ",
-    bio: "",
-    links: [{ label: "Instagram", url: "https://www.instagram.com/djmyth/" }],
+    bio: "DJ Myth is a Manchester, New Hampshire turntablist and a co-founding force behind Rap Night Manchester, the state's longest-running hip-hop residency at the Shaskeen Pub. Alongside Eyenine, he helped build the weekly night into a cornerstone of the Granite State hip-hop scene, with MC cyphers and showcases for regional and national touring artists. He also marked hip-hop's 50th anniversary with “Without Me,” produced by and featuring Boston hip-hop veteran Edo G.",
+    links: [
+      { label: "Instagram", url: "https://www.instagram.com/djmyth/" },
+      { label: "Read the Concord Monitor feature", url: "https://www.concordmonitor.com/2023/11/25/the-evolution-of-hip-hop-in-the-granite-state-53039163/" },
+    ],
   },
 ];
 
