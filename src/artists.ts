@@ -182,7 +182,7 @@ export const oct15Artists: Artist[] = [
     id: "dj-myth",
     name: "DJ Myth",
     role: "DJ",
-    bio: "DJ Myth is a Manchester, New Hampshire turntablist and a co-founding force behind Rap Night Manchester, the state's longest-running hip-hop residency at the Shaskeen Pub. Alongside Eyenine, he helped build the weekly night into a cornerstone of the Granite State hip-hop scene, with MC cyphers and showcases for regional and national touring artists. He also marked hip-hop's 50th anniversary with “Without Me,” produced by and featuring Boston hip-hop veteran Edo G.",
+    bio: "DJ Myth is a Manchester, New Hampshire turntablist and a co-founding force behind Rap Night Manchester, the state's longest-running hip-hop residency at the Shaskeen Pub. Alongside Eyenine, he helped build the weekly night into a cornerstone of the Granite State hip-hop scene, with MC cyphers and showcases for regional and national touring artists. He also marked hip-hop's 50th anniversary with “Without Me,” produced by and featuring Boston hip-hop veteran Edo G. He often performs with Fee & The Evolutionists.",
     links: [
       { label: "Instagram", url: "https://www.instagram.com/djmyth/" },
       { label: "Read the Concord Monitor feature", url: "https://www.concordmonitor.com/2023/11/25/the-evolution-of-hip-hop-in-the-granite-state-53039163/" },
@@ -247,13 +247,17 @@ export const danceJamArtists: Artist[] = [
       { label: "D.O.A. on Instagram", url: "https://www.instagram.com/jacquesmeup/" },
     ],
   },
-  { id: "dj-hiphop-dj", name: "DJ Trends", role: "Hip-Hop DJ", bio: "" },
+  { id: "dj-hiphop-dj", name: "DJ Trends", role: "Hip-Hop DJ", bio: "", links: [
+      { label: "Instagram", url: "https://www.instagram.com/djtrends/" },
+    ] },
   {
     id: "dj-performances",
     name: "Mill Advised · GEN Crew · Synergy · The Anomalies · More TBA",
     role: "Performances",
     bio: "",
     links: [
+      { label: "Mill Advised on Instagram", url: "https://www.instagram.com/milladvised/" },
+      { label: "GEN Crew on Instagram", url: "https://www.instagram.com/gencrewofficial/" },
       { label: "Synergy on Instagram", url: "https://www.instagram.com/synstagrammm/" },
       { label: "The Anomalies on Instagram", url: "https://www.instagram.com/wearetheanomalies_/" },
     ],
