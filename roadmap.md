@@ -1,11 +1,12 @@
 # Lowell Hip-Hop Festival Site Roadmap
 
 ## Open
-- [ ] Update supplied artist profiles, Elmstreet bio, DJ Myth and dance performers; verify judges’ Instagram accounts
+- [ ] Verify judges’ Instagram accounts; request handles where identities cannot be confirmed
 - [ ] Await real contact email and volunteer URL to replace placeholders
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
 
 ## Done
+- [x] Updated supplied artist profiles, Elmstreet bio and article, DJ Myth and dance performers in the preview
 - [x] Put Egypt first at standard artist size and add verified links across the full lineup
 - [x] Renamed Dance Jam Finale to Mill City Get Down throughout the site
 - [x] Added approved Egypt, Elmstreet, DJ KingX and TDI Muzik bios and reorganized the Lineup page
