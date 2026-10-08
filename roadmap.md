@@ -2,7 +2,7 @@
 
 ## Open
 - [ ] Rename Dance Jam Finale to Mill City Get Down throughout the site, preserving lowercase i's in all-caps styling
-- [ ] Await approval of researched Egypt, Elmstreet, DJ KingX and TDI Muzik bios and Lineup page reorganization
+- [ ] Apply approved Egypt, Elmstreet, DJ KingX and TDI Muzik bios and Lineup page reorganization
 - [ ] Await real contact email and volunteer URL to replace placeholders
 - [ ] Await user-supplied About story to replace AI-invented aboutStory
 
