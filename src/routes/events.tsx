@@ -6,7 +6,7 @@ import { getCommunityEvents, getFestivalEvents, getPublicEvents } from "@/lib/ev
 
 const title = "Events — Lowell Hip-Hop Festival";
 const description =
-  "Lowell Hip-Hop Festival week October 10–18, 2026, partner events including Refuge Art School's Waves of Migration mural unveiling, and year-round community appearances.";
+  "Lowell Hip-Hop Festival week October 10–18, 2026, and year-round community appearances across Lowell.";
 
 export const Route = createFileRoute("/events")({
   head: () => ({
@@ -45,14 +45,16 @@ function EventsPage() {
         </div>
       </section>
 
-      <section className="border-t-2 border-border">
-        <div className="mx-auto max-w-4xl px-4 py-14 sm:py-20">
-          <h2 className="text-3xl text-offwhite sm:text-4xl">Partner Events</h2>
-          <div className="mt-8 space-y-px bg-border">
-            {partners.map((event) => <EventCard key={event.id} event={event} />)}
+      {partners.length > 0 && (
+        <section className="border-t-2 border-border">
+          <div className="mx-auto max-w-4xl px-4 py-14 sm:py-20">
+            <h2 className="text-3xl text-offwhite sm:text-4xl">Partner Events</h2>
+            <div className="mt-8 space-y-px bg-border">
+              {partners.map((event) => <EventCard key={event.id} event={event} />)}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section className="border-t-2 border-border">
         <div className="mx-auto max-w-4xl px-4 py-14 sm:py-20">
