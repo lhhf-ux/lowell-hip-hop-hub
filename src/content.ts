@@ -112,7 +112,7 @@ export const events: FestEvent[] = [
     venue: "GEN Studio",
     mapQuery: "GEN Studio, Western Avenue Studios, 122 Western Ave #225, Lowell, MA",
     description:
-      "An open-level introduction to hip-hop dance foundations, led by Justin. No experience needed — just wear sneakers. Justin will be teaching a 45-second-long original choreography that will act as an intro to hip-hop and dancing! Be prepared to get hype and energetic as you learn what Justin has cooked up with MOTION by CORTIS ft. Juicy J.",
+      "An open-level introduction to hip-hop dance foundations, led by Justin. No experience needed — just wear sneakers. Justin will be teaching a 45-second-long original choreography that will act as an intro to hip-hop and dancing! Be prepared to get hype and energetic as you learn what Justin has cooked up with MOTION by CORTIS ft. Juicy J. Limited to 20 participants.",
     category: "festival",
   },
   {
@@ -144,7 +144,7 @@ export const events: FestEvent[] = [
     venue: "The Hive Public Market",
     mapQuery: "The Hive Public Market, 101 Paige St, Lowell, MA",
     description:
-      "Hip-Hop 101 is led by CabbHoppa1 — the history of the culture and its four elements — followed by a hands-on graffiti lettering session led by Xavier Robbins. All ages welcome.",
+      "Hip-Hop 101 is led by CabbHoppa1 — the history of the culture and its four elements — followed by a hands-on graffiti lettering session led by Xavier Robbins. All ages welcome. Limited to 20 participants.",
     category: "festival",
   },
   {
