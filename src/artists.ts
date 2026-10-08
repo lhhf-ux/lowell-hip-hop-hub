@@ -217,6 +217,11 @@ export const danceJamArtists: Artist[] = [
     name: "Baldi · RTA · Grinz",
     role: "Breaking Judges",
     bio: "",
+    links: [
+      { label: "Baldi on Instagram", url: "https://www.instagram.com/rawkitpower/" },
+      { label: "RTA on Instagram", url: "https://www.instagram.com/rith_978/" },
+      { label: "Grinz on Instagram", url: "https://www.instagram.com/klelleyku/" },
+    ],
   },
   {
     id: "dj-breaking-dj",
@@ -234,6 +239,10 @@ export const danceJamArtists: Artist[] = [
     name: "Lady Ice · McKersin · D.O.A.",
     role: "Hip-Hop Battle Judges",
     bio: "",
+    links: [
+      { label: "McKersin on Instagram", url: "https://www.instagram.com/mckersin/" },
+      { label: "D.O.A. on Instagram", url: "https://www.instagram.com/jacquesmeup/" },
+    ],
   },
   { id: "dj-hiphop-dj", name: "DJ Trends", role: "Hip-Hop DJ", bio: "" },
   {
