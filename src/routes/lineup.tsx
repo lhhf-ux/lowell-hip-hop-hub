@@ -13,6 +13,7 @@ import {
   supportArtists,
   ticketUrl,
 } from "@/content";
+import type { Artist } from "@/artists";
 
 const title = "Lineup — Lowell Hip-Hop Festival 2026";
 const description =
@@ -58,6 +59,37 @@ function ArtistTile({
         </div>
       ) : null}
     </article>
+  );
+}
+
+// A single artist shown with their photo or logo beside the bio box.
+function ArtistFeature({
+  artist,
+  src,
+  alt,
+  fit = "cover",
+}: {
+  artist: Artist;
+  src: string;
+  alt: string;
+  fit?: "cover" | "contain";
+}) {
+  return (
+    <div className="grid gap-px bg-border sm:grid-cols-2">
+      <div className="flex items-center justify-center bg-cardgray p-6 sm:p-8">
+        <img
+          src={src}
+          alt={alt}
+          loading="lazy"
+          className={
+            fit === "cover"
+              ? "h-full max-h-96 w-full object-cover"
+              : "max-h-72 w-full object-contain"
+          }
+        />
+      </div>
+      <ArtistTile {...artist} />
+    </div>
   );
 }
 
@@ -137,9 +169,15 @@ function LineupPage() {
         <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
           <p className="eyebrow text-gold">Thursday, October 15 · 8:00 PM · Warp & Weft</p>
           <h2 className="mt-3 text-3xl text-offwhite sm:text-4xl">DJ Myth</h2>
-          <div className="mt-8 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8">
             {oct15Artists.map((artist) => (
-              <ArtistTile key={artist.id} {...artist} />
+              <ArtistFeature
+                key={artist.id}
+                artist={artist}
+                src="/images/dj-myth-logo.png"
+                alt="DJ Myth logo"
+                fit="contain"
+              />
             ))}
           </div>
         </div>
@@ -149,9 +187,14 @@ function LineupPage() {
         <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
           <p className="eyebrow text-gold">Saturday, October 17 · 8:00 PM · Warp & Weft</p>
           <h2 className="mt-3 text-3xl text-offwhite sm:text-4xl">Fee & The Evolutionists</h2>
-          <div className="mt-8 grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8">
             {oct17Artists.map((artist) => (
-              <ArtistTile key={artist.id} {...artist} />
+              <ArtistFeature
+                key={artist.id}
+                artist={artist}
+                src="/images/fee-evolutionists.jpg"
+                alt="Fee & The Evolutionists performing live"
+              />
             ))}
           </div>
         </div>
