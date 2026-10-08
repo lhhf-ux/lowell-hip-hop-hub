@@ -2,7 +2,7 @@
 
 ## Scope
 
-Only the Lineup page and its data change. Home, Schedule, Calendar and Events copy stay exactly as they are.
+The new acts and artist reorganization affect only the Lineup page and its data. Also rename Dance Jam Finale to **Mill City Get Down** throughout the site; no other Home, Schedule, Calendar or Events copy changes.
 
 ## New Lineup page order
 
@@ -12,7 +12,7 @@ Only the Lineup page and its data change. Home, Schedule, Calendar and Events co
 4. **Local Artists** — Egypt (new, first tile), then Mill City Madness, Malissa Lach, CabbHoppa1, Chi Tashi, SoloArtist, Persona the Tyrant, Ape the Grim
 5. **DJs** — new section: Elmstreet, DJ KingX
 6. Fee & The Evolutionists — Saturday, October 17 — unchanged
-7. Dance Jam Finale — Sunday, October 18 — unchanged
+7. **Mill City Get Down** — Sunday, October 18 — renamed; roster, date, time and venue unchanged
 
 Section order is easy to reshuffle if you'd rather the DJs sit above Local Artists.
 
@@ -48,13 +48,13 @@ Name check: use **TDI Muzik**, matching public event listings. Some music credit
 
 ### Elmstreet — DJ & Host
 
-Elmstreet joins the Kick-off Concert as a DJ and host, then returns to host the Dance Jam Finale on October 18. His local appearances include an Open Streets Lowell lineup alongside Malissa Lach and CabbHoppa1, presented by the Lowell Hip-Hop Festival.
+Elmstreet joins the Kick-off Concert as a DJ and host, then returns to host Mill City Get Down on October 18. His local appearances include an Open Streets Lowell lineup alongside Malissa Lach and CabbHoppa1, presented by the Lowell Hip-Hop Festival.
 
 Source: [Open Streets Lowell performance listing](https://www.openstreetslowell.org/things-to-do/). Festival roles and dates are confirmed by you and the current schedule. His wider career history was not sufficiently documented to add more claims.
 
 ### DJ KingX — DJ & B-boy
 
-DJ KingX is a DJ and b-boy representing Lawtown Assassins. His *Born 2 Get Down* mixtape brings together b-boy breaks with a boom-bap lean. He joins the Kick-off Concert behind the decks and returns as the breaking DJ for the Dance Jam Finale on October 18.
+DJ KingX is a DJ and b-boy representing Lawtown Assassins. His *Born 2 Get Down* mixtape brings together b-boy breaks with a boom-bap lean. He joins the Kick-off Concert behind the decks and returns as the breaking DJ for Mill City Get Down on October 18.
 
 Sources: [artist's SoundCloud mixtape](https://soundcloud.com/djkingxassasins/born-2-get-down-mixtape); [mixtape coverage](https://hamza21.com/2026/06/08/mix-mondays-born-2-get-down/). Crew affiliation and festival roles are confirmed by you. No unsupported production or judging claims are included.
 
@@ -69,14 +69,22 @@ Source notes remain in this draft; the artist bios themselves will appear on the
 
 Say the word and I'll drop the links, the wide tile, or both.
 
+## Event rename
+
+- Normal text: **Mill City Get Down**.
+- All-caps labels: **MiLL CiTY GET DOWN**, keeping both i's lowercase.
+- Update the event title, Lineup heading, venue description, sponsor benefit text, and page descriptions wherever the previous name appears. Schedule, Events and Calendar inherit the updated shared event title.
+- Preserve the existing event date, time, venue, roster and internal identifier.
+- Ensure uppercase styling does not convert the two lowercase i's back to capitals.
+
 ## Technical notes
 
 - `src/artists.ts` — add a `featuredArtists` array (Poppy Pyonn, TDI Muzik) and a `kickoffDJs` array (Elmstreet, DJ KingX); remove Poppy Pyonn from `supportArtists`; add Egypt as the first entry of `supportArtists`. New acts get the approved bios above.
 - `src/content.ts` — re-export the two new arrays alongside the existing ones.
 - `src/routes/lineup.tsx` — two new sections built from the same tile component, plus a wider Egypt tile with the two external links.
 - Egypt's YouTube and Lowell Sun links use the exact URLs you supplied. The article text is available through search and syndication; direct automated requests may be blocked, so reader access may depend on the publisher.
-- Elmstreet and DJ KingX keep their existing Dance Jam entries, so they appear on two nights.
+- Elmstreet and DJ KingX keep their existing Mill City Get Down entries, so they appear on two nights.
 
 ## Approval
 
-Approve or edit the four draft bios and Egypt's prominent placement before any lineup changes are applied. TDI Muzik uses the confirmed Special Guest label and sits in Featured Artists with Poppy Pyonn, as requested. Lawtown Assassins appears in DJ KingX's bio. No site content has been changed yet.
+Approve or edit the four draft bios, Egypt's prominent placement, and the event rename before the combined update is applied. TDI Muzik uses the confirmed Special Guest label and sits in Featured Artists with Poppy Pyonn, as requested. Lawtown Assassins appears in DJ KingX's bio. No site content has been changed yet.
