@@ -25,6 +25,11 @@ export function EventCard({ event }: { event: FestEvent }) {
         </a>
       </p>
       <p className="mt-4 max-w-2xl text-concrete">{event.description}</p>
+      {event.waiverUrl ? (
+        <div className="mt-6">
+          <ExternalButton href={event.waiverUrl}>Liability Waiver</ExternalButton>
+        </div>
+      ) : null}
       {event.foodTrucks ? (
         <div className="mt-6">
           <p className="eyebrow text-gold">Food Trucks</p>
@@ -48,11 +53,6 @@ export function EventCard({ event }: { event: FestEvent }) {
       ) : (
         <p className="label-type mt-6 text-xs text-concrete">Free · No ticket required</p>
       )}
-      {event.waiverUrl ? (
-        <div className="mt-4">
-          <ExternalButton href={event.waiverUrl}>Liability Waiver</ExternalButton>
-        </div>
-      ) : null}
     </article>
   );
 }
