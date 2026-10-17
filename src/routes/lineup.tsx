@@ -17,7 +17,7 @@ import type { Artist } from "@/artists";
 
 const title = "Lineup — Lowell Hip-Hop Festival 2026";
 const description =
-  "Jungle Brothers and Termanology headline the Kick-off Concert, with Egypt, Poppy Pyonn, TDI Muzik and more artists, plus Fee & The Evolutionists and the full Mill City Get Down roster.";
+  "Jungle Brothers and Termanology headline the Kick-off Concert, with Poppy Pyonn, TDI Muzik and more artists, plus Fee & The Evolutionists and the full Mill City Get Down roster.";
 
 export const Route = createFileRoute("/lineup")({
   head: () => ({

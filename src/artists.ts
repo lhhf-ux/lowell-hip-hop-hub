@@ -105,17 +105,6 @@ export const supportArtists: Artist[] = [
     ],
   },
   {
-    id: "persona-the-tyrant",
-    name: "Persona the Tyrant",
-    role: "MC",
-    bio: "A Lowell local and underground MC who has been at it since 2004, building a sound on raw lyricism and horror-inspired darkness that answers to the 978 and nothing else.",
-    links: [
-      { label: "Instagram", url: "https://www.instagram.com/Persona978/" },
-      { label: "Spotify", url: "https://open.spotify.com/artist/0xMSvSiwoAEbT9Ak7cHup5" },
-      { label: "Artist Profile", url: "https://slaps.com/Persona978" },
-    ],
-  },
-  {
     id: "ape-the-grim",
     name: "Ape the Grim",
     role: "MC",
@@ -258,7 +247,7 @@ export const danceJamArtists: Artist[] = [
     links: [
       { label: "Mill Advised on Instagram", url: "https://www.instagram.com/milladvised/" },
       { label: "GEN Crew on Instagram", url: "https://www.instagram.com/gencrewofficial/" },
-      { label: "Synergy on Instagram", url: "https://www.instagram.com/synstagrammm/" },
+      { label: "Synergy on Instagram", url: "https://www.instagram.com/lhs_synergy/" },
       { label: "The Anomalies on Instagram", url: "https://www.instagram.com/wearetheanomalies_/" },
     ],
   },
