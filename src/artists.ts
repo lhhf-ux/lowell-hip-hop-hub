@@ -33,26 +33,6 @@ export const headliners: Artist[] = [
 
 export const supportArtists: Artist[] = [
   {
-    id: "egypt",
-    name: "Egypt",
-    role: "MC / Rapper",
-    bio: "Egypt is a Lowell rapper, also known as Egypt Raps, who has been performing in the city and beyond for about a decade. Her work extends beyond music into volunteer work and speaking at local high schools. In 2026, with support from a Mosaic Lowell grant, she published From Nothing to Everything, a book drawing on her own experiences to help readers rise above their circumstances. An August feature in the Lowell Sun highlighted her music, growing online audience, and work with young people.",
-    links: [
-      {
-        label: "Instagram",
-        url: "https://www.instagram.com/egypt_raps/",
-      },
-      {
-        label: "Watch on YouTube",
-        url: "https://www.youtube.com/channel/UCY9SRjh0AiEOCyZrE_wq-Ag",
-      },
-      {
-        label: "Read the Lowell Sun feature",
-        url: "https://www.lowellsun.com/2026/08/23/rapping-out-a-lowell-beat/",
-      },
-    ],
-  },
-  {
     id: "mill-city-madness",
     name: "Mill City Madness",
     role: "Collective",
@@ -102,17 +82,6 @@ export const supportArtists: Artist[] = [
     links: [
       { label: "Instagram", url: "https://www.instagram.com/iamsolotheartist/" },
       { label: "Read the GBH Feature", url: "https://www.wgbh.org/culture/2020-06-30/mass-mix-run-the-jewels-optic-bloom-and-other-artists-with-songs-of-protest-that-boston-has-on-heavy-rotation" },
-    ],
-  },
-  {
-    id: "persona-the-tyrant",
-    name: "Persona the Tyrant",
-    role: "MC",
-    bio: "A Lowell local and underground MC who has been at it since 2004, building a sound on raw lyricism and horror-inspired darkness that answers to the 978 and nothing else.",
-    links: [
-      { label: "Instagram", url: "https://www.instagram.com/Persona978/" },
-      { label: "Spotify", url: "https://open.spotify.com/artist/0xMSvSiwoAEbT9Ak7cHup5" },
-      { label: "Artist Profile", url: "https://slaps.com/Persona978" },
     ],
   },
   {
@@ -258,7 +227,7 @@ export const danceJamArtists: Artist[] = [
     links: [
       { label: "Mill Advised on Instagram", url: "https://www.instagram.com/milladvised/" },
       { label: "GEN Crew on Instagram", url: "https://www.instagram.com/gencrewofficial/" },
-      { label: "Synergy on Instagram", url: "https://www.instagram.com/synstagrammm/" },
+      { label: "Synergy on Instagram", url: "https://www.instagram.com/lhs_synergy/" },
       { label: "The Anomalies on Instagram", url: "https://www.instagram.com/wearetheanomalies_/" },
     ],
   },
