@@ -13,6 +13,7 @@ export type FestEvent = {
   description: string;
   ticketUrl?: string;
   eventUrl?: string;
+  waiverUrl?: string;
   foodTrucks?: boolean;
   category: EventCategory;
 };
