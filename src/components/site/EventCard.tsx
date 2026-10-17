@@ -48,6 +48,11 @@ export function EventCard({ event }: { event: FestEvent }) {
       ) : (
         <p className="label-type mt-6 text-xs text-concrete">Free · No ticket required</p>
       )}
+      {event.waiverUrl ? (
+        <div className="mt-4">
+          <ExternalButton href={event.waiverUrl}>Liability Waiver</ExternalButton>
+        </div>
+      ) : null}
     </article>
   );
 }

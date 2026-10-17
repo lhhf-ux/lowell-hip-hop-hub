@@ -169,6 +169,7 @@ export const events: FestEvent[] = [
     mapQuery: "Tescobar Performance Center, 72 Middlesex St, Lowell, MA",
     description:
       "Hip-hop dance battles, dance showcases, cyphers and circles to close the festival out.",
+    waiverUrl: "/documents/mill-city-get-down-waiver.pdf",
     foodTrucks: true,
     category: "festival",
   },
