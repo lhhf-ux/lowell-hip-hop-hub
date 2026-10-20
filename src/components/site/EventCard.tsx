@@ -1,5 +1,5 @@
 import { foodTrucks, type FestEvent } from "@/content";
-import { formatLongDate, googleMapsUrl } from "@/lib/events";
+import { formatLongDate, googleMapsUrl, isUpcoming } from "@/lib/events";
 import { ExternalButton } from "./Button";
 
 export function EventCard({ event }: { event: FestEvent }) {
@@ -50,9 +50,9 @@ export function EventCard({ event }: { event: FestEvent }) {
         <div className="mt-6">
           <ExternalButton href={event.eventUrl} variant="outline">Facebook Event</ExternalButton>
         </div>
-      ) : (
+      ) : isUpcoming(event) ? (
         <p className="label-type mt-6 text-xs text-concrete">Free · No ticket required</p>
-      )}
+      ) : null}
     </article>
   );
 }

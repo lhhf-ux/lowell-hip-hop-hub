@@ -126,9 +126,7 @@ function LineupPage() {
             <ArtistTile key={artist.id} {...artist} />
           ))}
         </div>
-        <div className="mt-8">
-          <ExternalButton href={ticketUrl}>Get Kick-off Concert Tickets</ExternalButton>
-        </div>
+
       </section>
 
       <section className="border-t-2 border-border bg-cardgray">
