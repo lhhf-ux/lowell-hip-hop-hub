@@ -11,7 +11,6 @@ import {
   oct17Artists,
   spotifyPlaylistUrl,
   supportArtists,
-  ticketUrl,
 } from "@/content";
 import type { Artist } from "@/artists";
 
