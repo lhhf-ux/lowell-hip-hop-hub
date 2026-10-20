@@ -331,6 +331,23 @@ export const currentSponsors: Sponsor[] = [
 
 export const volunteerRoles = [
   {
+    title: "Planning Committee",
+    description:
+      "Help shape the 2027 festival — booking, venues, budget, and the big decisions. Planning for next year starts soon.",
+  },
+  {
+    title: "Graphic Design",
+    description: "Posters, flyers, and social graphics. Give the festival its look.",
+  },
+  {
+    title: "Marketing",
+    description: "Get the word out online and in the press — social posts, listings, and local coverage.",
+  },
+  {
+    title: "Hospitality",
+    description: "Look after the artists and performers: check-ins, green room, and making everyone feel welcome.",
+  },
+  {
     title: "Street Team & Flyering",
     description: "Get the word out across Lowell in the weeks before the festival. Posters, flyers, and word of mouth.",
   },
@@ -340,10 +357,14 @@ export const volunteerRoles = [
   },
   {
     title: "Day-of Support",
-    description: "Door, info tables, artist hospitality, and keeping the day running on time.",
+    description: "Door, info tables, and keeping the day running on time.",
   },
   {
     title: "Year-round Tabling",
     description: "Represent the festival at community events across the city all year long.",
+  },
+  {
+    title: "Wherever You're Needed",
+    description: "No set role — pitch in wherever the need is biggest that day.",
   },
 ];
