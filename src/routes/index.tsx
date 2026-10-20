@@ -44,6 +44,37 @@ function HomePage() {
 
   return (
     <SiteLayout>
+      <section className="bg-gold">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:py-14">
+          <h2 className="text-4xl text-vinyl sm:text-6xl">The Lowell Hip-Hop Festival 2026 is in the books.</h2>
+          <div className="mt-5 max-w-2xl space-y-4 text-vinyl">
+            <p>
+              Over 500 people came out to 7 events across 9 days. Thank you to our planning committee, volunteers,
+              sponsors, and performers for making our inaugural year a success.
+            </p>
+            <p>
+              We're committed to make this an annual event. Planning for 2027 starts soon. If you want to be part of it,
+              sign up on our{" "}
+              <Link
+                to="/get-involved"
+                className="label-type underline decoration-2 underline-offset-4 hover:opacity-80"
+              >
+                Get Involved page
+              </Link>{" "}
+              or reach out on{" "}
+              <a
+                href={socialLinks.instagram.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="label-type underline decoration-2 underline-offset-4 hover:opacity-80"
+              >
+                Instagram
+              </a>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
       <section className="grain border-b-4 border-graffiti bg-vinyl">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:py-24 lg:grid-cols-[1.4fr_1fr]">
           <div>
@@ -58,7 +89,9 @@ function HomePage() {
               headline the Kick-off Concert on October 10.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <ExternalButton href={ticketUrl}>Get Tickets</ExternalButton>
+              <InternalButton to="/get-involved" variant="gold">
+                Get Involved
+              </InternalButton>
               <InternalButton to="/schedule">See the Schedule</InternalButton>
             </div>
           </div>
@@ -121,7 +154,6 @@ function HomePage() {
                 ))}
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
-                <ExternalButton href={ticketUrl}>Get Tickets</ExternalButton>
                 <InternalButton to="/lineup">Full Lineup</InternalButton>
                 <ExternalButton href={donateUrl} variant="outline">
                   Donate
