@@ -47,11 +47,12 @@ function HomePage() {
       <section className="bg-vinyl pt-6 sm:pt-10">
         <div className="mx-auto max-w-6xl sm:px-4">
         <div className="bg-gold px-5 py-6 sm:px-10 sm:py-8">
-          <h2 className="text-3xl text-vinyl sm:text-4xl">The Lowell Hip-Hop Festival 2026 is in the books.</h2>
+          <h2 className="text-3xl text-vinyl sm:text-4xl">Lowell showed up.</h2>
           <div className="mt-4 space-y-3 text-lg leading-relaxed text-vinyl">
             <p>
-              Over 500 people came out to 7 events across 9 days. Thank you to our planning committee, volunteers,
-              sponsors, and performers for making our inaugural year a success.
+              Over 500 through the doors. Over 60 battlers. More than 20 MCs, DJs and musicians. 5 visual artists. 7
+              events, 5 venues, 9 days. All four elements on display. All over the Mill City. Thank you to our planning
+              committee, volunteers, sponsors, and performers for making our inaugural year a success.
             </p>
             <p>
               We're committed to making this an annual event. Planning for 2027 starts soon. If you want to be part of it,
