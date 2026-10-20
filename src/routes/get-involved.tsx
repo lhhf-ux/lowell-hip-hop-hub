@@ -28,7 +28,7 @@ function GetInvolvedPage() {
       <PageHeader
         eyebrow="Volunteer · Donate · Perform"
         title="Get Involved"
-        intro="No committee, no gatekeeping. If you want to help, there is a job for you."
+        intro="Backed by our planning committee and open to anyone willing to pitch in — no application, no interview. There's a job for you."
       />
 
       <section className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
