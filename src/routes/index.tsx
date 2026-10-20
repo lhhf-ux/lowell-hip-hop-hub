@@ -58,7 +58,7 @@ function HomePage() {
               sign up on our{" "}
               <Link
                 to="/get-involved"
-                className="label-type underline decoration-2 underline-offset-4 hover:opacity-80"
+                className="font-semibold underline decoration-2 underline-offset-4 hover:opacity-80"
               >
                 Get Involved page
               </Link>{" "}
@@ -67,7 +67,7 @@ function HomePage() {
                 href={socialLinks.instagram.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="label-type underline decoration-2 underline-offset-4 hover:opacity-80"
+                className="font-semibold underline decoration-2 underline-offset-4 hover:opacity-80"
               >
                 Instagram
               </a>
