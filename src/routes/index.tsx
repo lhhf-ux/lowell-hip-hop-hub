@@ -45,9 +45,9 @@ function HomePage() {
   return (
     <SiteLayout>
       <section className="bg-gold sm:bg-vinyl">
-        <div className="mx-auto max-w-4xl bg-gold px-4 py-10 sm:py-14">
-          <h2 className="text-4xl text-vinyl sm:text-6xl">The Lowell Hip-Hop Festival 2026 is in the books.</h2>
-          <div className="mt-5 max-w-2xl space-y-4 text-vinyl">
+        <div className="mx-auto max-w-4xl bg-gold px-6 py-10 sm:px-12 sm:py-14 lg:px-16">
+          <h2 className="text-4xl text-vinyl sm:text-5xl">The Lowell Hip-Hop Festival 2026 is in the books.</h2>
+          <div className="mt-5 space-y-4 text-lg leading-relaxed text-vinyl">
             <p>
               Over 500 people came out to 7 events across 9 days. Thank you to our planning committee, volunteers,
               sponsors, and performers for making our inaugural year a success.
