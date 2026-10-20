@@ -45,7 +45,7 @@ function HomePage() {
   return (
     <SiteLayout>
       <section className="bg-gold sm:bg-vinyl">
-        <div className="mx-auto max-w-6xl bg-gold px-4 py-10 sm:py-14">
+        <div className="mx-auto max-w-4xl bg-gold px-4 py-10 sm:py-14">
           <h2 className="text-4xl text-vinyl sm:text-6xl">The Lowell Hip-Hop Festival 2026 is in the books.</h2>
           <div className="mt-5 max-w-2xl space-y-4 text-vinyl">
             <p>
