@@ -44,16 +44,17 @@ function HomePage() {
 
   return (
     <SiteLayout>
-      <section className="bg-gold sm:bg-vinyl">
-        <div className="mx-auto max-w-4xl bg-gold px-6 py-10 sm:px-12 sm:py-14 lg:px-16">
-          <h2 className="text-4xl text-vinyl sm:text-5xl">The Lowell Hip-Hop Festival 2026 is in the books.</h2>
-          <div className="mt-5 space-y-4 text-lg leading-relaxed text-vinyl">
+      <section className="bg-vinyl pt-6 sm:pt-10">
+        <div className="mx-auto max-w-6xl sm:px-4">
+        <div className="bg-gold px-5 py-6 sm:px-10 sm:py-8">
+          <h2 className="text-3xl text-vinyl sm:text-4xl">The Lowell Hip-Hop Festival 2026 is in the books.</h2>
+          <div className="mt-4 space-y-3 text-lg leading-relaxed text-vinyl">
             <p>
               Over 500 people came out to 7 events across 9 days. Thank you to our planning committee, volunteers,
               sponsors, and performers for making our inaugural year a success.
             </p>
             <p>
-              We're committed to make this an annual event. Planning for 2027 starts soon. If you want to be part of it,
+              We're committed to making this an annual event. Planning for 2027 starts soon. If you want to be part of it,
               sign up on our{" "}
               <Link
                 to="/get-involved"
@@ -73,6 +74,7 @@ function HomePage() {
               .
             </p>
           </div>
+        </div>
         </div>
       </section>
       <section className="grain border-b-4 border-graffiti bg-vinyl">
