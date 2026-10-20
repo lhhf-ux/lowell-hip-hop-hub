@@ -75,6 +75,7 @@ function HomePage() {
             </p>
           </div>
         </div>
+        </div>
       </section>
       <section className="grain border-b-4 border-graffiti bg-vinyl">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-16 sm:py-24 lg:grid-cols-[1.4fr_1fr]">
