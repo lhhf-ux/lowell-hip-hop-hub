@@ -352,12 +352,9 @@ export const volunteerRoles = [
     description: "Get the word out across Lowell in the weeks before the festival. Posters, flyers, and word of mouth.",
   },
   {
-    title: "Setup & Breakdown",
-    description: "Help build and strike each event. Tables, signage, gear runs, and the unglamorous essentials.",
-  },
-  {
     title: "Day-of Support",
-    description: "Door, info tables, and keeping the day running on time.",
+    description:
+      "Door, info tables, and keeping the day running on time — plus helping build and strike each event: tables, signage, and gear runs.",
   },
   {
     title: "Year-round Tabling",
